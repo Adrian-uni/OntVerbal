@@ -1,0 +1,1467 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://openconf#"
+     xml:base="http://openconf"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#">
+    <owl:Ontology rdf:about="http://openconf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://openconf#Program_made_by -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#Program_made_by">
+        <owl:inverseOf rdf:resource="http://openconf#made_program"/>
+        <rdfs:domain rdf:resource="http://openconf#Conference_Program"/>
+        <rdfs:range rdf:resource="http://openconf#Program_chair"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#Review_made_by -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#Review_made_by">
+        <owl:inverseOf rdf:resource="http://openconf#has_made_review"/>
+        <rdfs:domain rdf:resource="http://openconf#Paper_Review"/>
+        <rdfs:range rdf:resource="http://openconf#Reviewer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#appropriate_length -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#appropriate_length">
+        <rdfs:domain rdf:resource="http://openconf#Paper_Review"/>
+        <rdfs:range rdf:resource="http://openconf#Long_bool"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#has_Categorization -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#has_Categorization">
+        <rdfs:domain rdf:resource="http://openconf#Paper_Review"/>
+        <rdfs:range rdf:resource="http://openconf#Paper_Categorization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#has_Overall -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#has_Overall">
+        <rdfs:domain rdf:resource="http://openconf#Paper_Review"/>
+        <rdfs:range rdf:resource="http://openconf#Overall_Value"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#has_Reccommendation -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#has_Reccommendation">
+        <rdfs:domain rdf:resource="http://openconf#Paper_Review"/>
+        <rdfs:range rdf:resource="http://openconf#Reccommendation"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#has_Result -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#has_Result">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Advocated_Paper"/>
+                    <rdf:Description rdf:about="http://openconf#Planed_Paper"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://openconf#Result_of_Advocate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#has_Review -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#has_Review">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Planed_Paper"/>
+                    <rdf:Description rdf:about="http://openconf#Reviewed_Paper"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://openconf#Paper_Review"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#has_been_sent_by -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#has_been_sent_by">
+        <owl:inverseOf rdf:resource="http://openconf#has_sent"/>
+        <rdfs:domain rdf:resource="http://openconf#Submitted_Paper"/>
+        <rdfs:range rdf:resource="http://openconf#Contact_Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#has_made_review -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#has_made_review">
+        <rdfs:domain rdf:resource="http://openconf#Reviewer"/>
+        <rdfs:range rdf:resource="http://openconf#Paper_Review"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#has_member -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#has_member">
+        <owl:inverseOf rdf:resource="http://openconf#is_member_of"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Program_Committee"/>
+                    <rdf:Description rdf:about="http://openconf#Review_Committee"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Advocate"/>
+                    <rdf:Description rdf:about="http://openconf#Program_chair"/>
+                    <rdf:Description rdf:about="http://openconf#Reviewer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#has_sent -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#has_sent">
+        <rdfs:domain rdf:resource="http://openconf#Contact_Author"/>
+        <rdfs:range rdf:resource="http://openconf#Submitted_Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#is_Candidate_for_Award -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#is_Candidate_for_Award">
+        <rdfs:domain rdf:resource="http://openconf#Paper_Review"/>
+        <rdfs:range rdf:resource="http://openconf#Long_bool"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#is_From_Area_of_Interest -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#is_From_Area_of_Interest">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Advocate"/>
+                    <rdf:Description rdf:about="http://openconf#Reviewer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://openconf#Topics"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#is_Type -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#is_Type">
+        <rdfs:domain rdf:resource="http://openconf#Paper_File"/>
+        <rdfs:range rdf:resource="http://openconf#Format"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#is_member_of -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#is_member_of">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Advocate"/>
+                    <rdf:Description rdf:about="http://openconf#Program_chair"/>
+                    <rdf:Description rdf:about="http://openconf#Reviewer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Program_Committee"/>
+                    <rdf:Description rdf:about="http://openconf#Review_Committee"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#is_planned_in -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#is_planned_in">
+        <owl:inverseOf rdf:resource="http://openconf#planned_papers"/>
+        <rdfs:domain rdf:resource="http://openconf#Planed_Paper"/>
+        <rdfs:range rdf:resource="http://openconf#Conference_Program"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#is_stored_in -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#is_stored_in">
+        <rdfs:domain rdf:resource="http://openconf#Submitted_Paper"/>
+        <rdfs:range rdf:resource="http://openconf#Paper_File"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#is_written_by -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#is_written_by">
+        <owl:inverseOf rdf:resource="http://openconf#writes_Paper"/>
+        <rdfs:domain rdf:resource="http://openconf#Paper"/>
+        <rdfs:range rdf:resource="http://openconf#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#made_program -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#made_program">
+        <rdfs:domain rdf:resource="http://openconf#Program_chair"/>
+        <rdfs:range rdf:resource="http://openconf#Conference_Program"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#planned_papers -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#planned_papers">
+        <rdfs:domain rdf:resource="http://openconf#Conference_Program"/>
+        <rdfs:range rdf:resource="http://openconf#Planed_Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#to_advocate_by -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#to_advocate_by">
+        <owl:inverseOf rdf:resource="http://openconf#will_advocate"/>
+        <rdfs:domain rdf:resource="http://openconf#Advocated_Paper"/>
+        <rdfs:range rdf:resource="http://openconf#Advocate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#will_advocate -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#will_advocate">
+        <rdfs:domain rdf:resource="http://openconf#Advocate"/>
+        <rdfs:range rdf:resource="http://openconf#Advocated_Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://openconf#writes_Paper -->
+
+    <owl:ObjectProperty rdf:about="http://openconf#writes_Paper">
+        <rdfs:domain rdf:resource="http://openconf#Author"/>
+        <rdfs:range rdf:resource="http://openconf#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://openconf#Abstract -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Abstract">
+        <rdfs:domain rdf:resource="http://openconf#Paper"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#Alternate_Email -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Alternate_Email">
+        <rdfs:domain rdf:resource="http://openconf#Contact_Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#Comments_To_Chair -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Comments_To_Chair">
+        <rdfs:domain rdf:resource="http://openconf#Submitted_Paper"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#Comments_for_Author -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Comments_for_Author">
+        <rdfs:domain rdf:resource="http://openconf#Paper_Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#Comments_for_Program_Committee -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Comments_for_Program_Committee">
+        <rdfs:domain rdf:resource="http://openconf#Paper_Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#Comments_to_Chair -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Comments_to_Chair">
+        <rdfs:domain rdf:resource="http://openconf#Reviewer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#Country -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Country">
+        <rdfs:domain rdf:resource="http://openconf#People"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#E-mail -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#E-mail">
+        <rdfs:domain rdf:resource="http://openconf#People"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#Keywords -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Keywords">
+        <rdfs:domain rdf:resource="http://openconf#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#Name -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Name">
+        <rdfs:domain rdf:resource="http://openconf#People"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#Organisation -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Organisation">
+        <rdfs:domain rdf:resource="http://openconf#People"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#Other_Areas -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Other_Areas">
+        <rdfs:domain rdf:resource="http://openconf#Reviewer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#Paper_Id -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Paper_Id">
+        <rdfs:domain rdf:resource="http://openconf#Submitted_Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#Password -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Password">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Member"/>
+                    <rdf:Description rdf:about="http://openconf#Submitted_Paper"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#Students -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Students">
+        <rdfs:domain rdf:resource="http://openconf#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#Surname -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Surname">
+        <rdfs:domain rdf:resource="http://openconf#People"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#Telephone -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Telephone">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Contact_Author"/>
+                    <rdf:Description rdf:about="http://openconf#Member"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#Title -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Title">
+        <rdfs:domain rdf:resource="http://openconf#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#UserName -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#UserName">
+        <rdfs:domain rdf:resource="http://openconf#Reviewer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#Web_Address -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Web_Address">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://openconf#Web_address -->
+
+    <owl:DatatypeProperty rdf:about="http://openconf#Web_address">
+        <rdfs:domain rdf:resource="http://openconf#Member"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://openconf#Adobe_PDF -->
+
+    <owl:Class rdf:about="http://openconf#Adobe_PDF">
+        <rdfs:subClassOf rdf:resource="http://openconf#Format"/>
+        <owl:disjointWith rdf:resource="http://openconf#Corel_Word_Perfect"/>
+        <owl:disjointWith rdf:resource="http://openconf#HTML"/>
+        <owl:disjointWith rdf:resource="http://openconf#MS_Word"/>
+        <owl:disjointWith rdf:resource="http://openconf#PostScript"/>
+        <owl:disjointWith rdf:resource="http://openconf#RTF"/>
+        <owl:disjointWith rdf:resource="http://openconf#Text"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Advocate -->
+
+    <owl:Class rdf:about="http://openconf#Advocate">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Member"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#is_From_Area_of_Interest"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Topics"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#is_member_of"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Program_Committee"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#will_advocate"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Advocated_Paper"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Advocated_Paper -->
+
+    <owl:Class rdf:about="http://openconf#Advocated_Paper">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Submitted_Paper"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#has_Result"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Result_of_Advocate"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#to_advocate_by"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Advocate"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Author -->
+
+    <owl:Class rdf:about="http://openconf#Author">
+        <rdfs:subClassOf rdf:resource="http://openconf#People"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://openconf#writes_Paper"/>
+                <owl:someValuesFrom rdf:resource="http://openconf#Paper"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Balanced_Theory_and_Practice -->
+
+    <owl:Class rdf:about="http://openconf#Balanced_Theory_and_Practice">
+        <rdfs:subClassOf rdf:resource="http://openconf#Paper_Categorization"/>
+        <owl:disjointWith rdf:resource="http://openconf#Highly_Practical"/>
+        <owl:disjointWith rdf:resource="http://openconf#Highly_Theoretical"/>
+        <owl:disjointWith rdf:resource="http://openconf#Tends_Towards_Practical"/>
+        <owl:disjointWith rdf:resource="http://openconf#Tends_Towards_Theoretical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Clarity_to_Present_Understanding -->
+
+    <owl:Class rdf:about="http://openconf#Clarity_to_Present_Understanding">
+        <rdfs:subClassOf rdf:resource="http://openconf#Overall_Value"/>
+        <owl:disjointWith rdf:resource="http://openconf#New_Information"/>
+        <owl:disjointWith rdf:resource="http://openconf#New_Perspective_Issue_Problem_Solving"/>
+        <owl:disjointWith rdf:resource="http://openconf#Not_Much"/>
+        <owl:disjointWith rdf:resource="http://openconf#Other"/>
+        <owl:disjointWith rdf:resource="http://openconf#Valuable_Confirmation_of_Present_Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Classic_Papers -->
+
+    <owl:Class rdf:about="http://openconf#Classic_Papers">
+        <rdfs:subClassOf rdf:resource="http://openconf#Topics"/>
+        <owl:disjointWith rdf:resource="http://openconf#Computer_Science"/>
+        <owl:disjointWith rdf:resource="http://openconf#Humour"/>
+        <owl:disjointWith rdf:resource="http://openconf#Networking"/>
+        <owl:disjointWith rdf:resource="http://openconf#Programming"/>
+        <owl:disjointWith rdf:resource="http://openconf#RFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Clear_Accept -->
+
+    <owl:Class rdf:about="http://openconf#Clear_Accept">
+        <rdfs:subClassOf rdf:resource="http://openconf#Reccommendation"/>
+        <owl:disjointWith rdf:resource="http://openconf#Clear_Reject"/>
+        <owl:disjointWith rdf:resource="http://openconf#Marginal_Tend_to_Accept"/>
+        <owl:disjointWith rdf:resource="http://openconf#Marginal_Tend_to_Reject"/>
+        <owl:disjointWith rdf:resource="http://openconf#Must_Accept"/>
+        <owl:disjointWith rdf:resource="http://openconf#Portable_Reject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Clear_Reject -->
+
+    <owl:Class rdf:about="http://openconf#Clear_Reject">
+        <rdfs:subClassOf rdf:resource="http://openconf#Reccommendation"/>
+        <owl:disjointWith rdf:resource="http://openconf#Marginal_Tend_to_Accept"/>
+        <owl:disjointWith rdf:resource="http://openconf#Marginal_Tend_to_Reject"/>
+        <owl:disjointWith rdf:resource="http://openconf#Must_Accept"/>
+        <owl:disjointWith rdf:resource="http://openconf#Portable_Reject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Committees -->
+
+    <owl:Class rdf:about="http://openconf#Committees">
+        <rdfs:subClassOf rdf:resource="http://openconf#Domain_Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Computer_Science -->
+
+    <owl:Class rdf:about="http://openconf#Computer_Science">
+        <rdfs:subClassOf rdf:resource="http://openconf#Topics"/>
+        <owl:disjointWith rdf:resource="http://openconf#Humour"/>
+        <owl:disjointWith rdf:resource="http://openconf#Networking"/>
+        <owl:disjointWith rdf:resource="http://openconf#Programming"/>
+        <owl:disjointWith rdf:resource="http://openconf#RFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Conference_Program -->
+
+    <owl:Class rdf:about="http://openconf#Conference_Program">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Domain_Topic"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#Program_made_by"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Program_chair"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#planned_papers"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Planed_Paper"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Contact_Author -->
+
+    <owl:Class rdf:about="http://openconf#Contact_Author">
+        <rdfs:subClassOf rdf:resource="http://openconf#Author"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Corel_Word_Perfect -->
+
+    <owl:Class rdf:about="http://openconf#Corel_Word_Perfect">
+        <rdfs:subClassOf rdf:resource="http://openconf#Format"/>
+        <owl:disjointWith rdf:resource="http://openconf#HTML"/>
+        <owl:disjointWith rdf:resource="http://openconf#MS_Word"/>
+        <owl:disjointWith rdf:resource="http://openconf#PostScript"/>
+        <owl:disjointWith rdf:resource="http://openconf#RTF"/>
+        <owl:disjointWith rdf:resource="http://openconf#Text"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Domain_Topic -->
+
+    <owl:Class rdf:about="http://openconf#Domain_Topic"/>
+    
+
+
+    <!-- http://openconf#Format -->
+
+    <owl:Class rdf:about="http://openconf#Format">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Adobe_PDF"/>
+                    <rdf:Description rdf:about="http://openconf#Corel_Word_Perfect"/>
+                    <rdf:Description rdf:about="http://openconf#HTML"/>
+                    <rdf:Description rdf:about="http://openconf#MS_Word"/>
+                    <rdf:Description rdf:about="http://openconf#PostScript"/>
+                    <rdf:Description rdf:about="http://openconf#RTF"/>
+                    <rdf:Description rdf:about="http://openconf#Text"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://openconf#Value_Partition"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Format of submmised papers files</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#HTML -->
+
+    <owl:Class rdf:about="http://openconf#HTML">
+        <rdfs:subClassOf rdf:resource="http://openconf#Format"/>
+        <owl:disjointWith rdf:resource="http://openconf#MS_Word"/>
+        <owl:disjointWith rdf:resource="http://openconf#PostScript"/>
+        <owl:disjointWith rdf:resource="http://openconf#RTF"/>
+        <owl:disjointWith rdf:resource="http://openconf#Text"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#High -->
+
+    <owl:Class rdf:about="http://openconf#High">
+        <rdfs:subClassOf rdf:resource="http://openconf#Reviewer_Famliliarity"/>
+        <owl:disjointWith rdf:resource="http://openconf#Low"/>
+        <owl:disjointWith rdf:resource="http://openconf#Moderate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Highly_Practical -->
+
+    <owl:Class rdf:about="http://openconf#Highly_Practical">
+        <rdfs:subClassOf rdf:resource="http://openconf#Paper_Categorization"/>
+        <owl:disjointWith rdf:resource="http://openconf#Highly_Theoretical"/>
+        <owl:disjointWith rdf:resource="http://openconf#Tends_Towards_Practical"/>
+        <owl:disjointWith rdf:resource="http://openconf#Tends_Towards_Theoretical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Highly_Theoretical -->
+
+    <owl:Class rdf:about="http://openconf#Highly_Theoretical">
+        <rdfs:subClassOf rdf:resource="http://openconf#Paper_Categorization"/>
+        <owl:disjointWith rdf:resource="http://openconf#Tends_Towards_Practical"/>
+        <owl:disjointWith rdf:resource="http://openconf#Tends_Towards_Theoretical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Humour -->
+
+    <owl:Class rdf:about="http://openconf#Humour">
+        <rdfs:subClassOf rdf:resource="http://openconf#Topics"/>
+        <owl:disjointWith rdf:resource="http://openconf#Networking"/>
+        <owl:disjointWith rdf:resource="http://openconf#Programming"/>
+        <owl:disjointWith rdf:resource="http://openconf#RFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Long_bool -->
+
+    <owl:Class rdf:about="http://openconf#Long_bool">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Value_Partition"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://openconf#No"/>
+                            <rdf:Description rdf:about="http://openconf#Unsure"/>
+                            <rdf:Description rdf:about="http://openconf#Yes"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Low -->
+
+    <owl:Class rdf:about="http://openconf#Low">
+        <rdfs:subClassOf rdf:resource="http://openconf#Reviewer_Famliliarity"/>
+        <owl:disjointWith rdf:resource="http://openconf#Moderate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#MS_Word -->
+
+    <owl:Class rdf:about="http://openconf#MS_Word">
+        <rdfs:subClassOf rdf:resource="http://openconf#Format"/>
+        <owl:disjointWith rdf:resource="http://openconf#PostScript"/>
+        <owl:disjointWith rdf:resource="http://openconf#RTF"/>
+        <owl:disjointWith rdf:resource="http://openconf#Text"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Marginal_Tend_to_Accept -->
+
+    <owl:Class rdf:about="http://openconf#Marginal_Tend_to_Accept">
+        <rdfs:subClassOf rdf:resource="http://openconf#Reccommendation"/>
+        <owl:disjointWith rdf:resource="http://openconf#Marginal_Tend_to_Reject"/>
+        <owl:disjointWith rdf:resource="http://openconf#Must_Accept"/>
+        <owl:disjointWith rdf:resource="http://openconf#Portable_Reject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Marginal_Tend_to_Reject -->
+
+    <owl:Class rdf:about="http://openconf#Marginal_Tend_to_Reject">
+        <rdfs:subClassOf rdf:resource="http://openconf#Reccommendation"/>
+        <owl:disjointWith rdf:resource="http://openconf#Must_Accept"/>
+        <owl:disjointWith rdf:resource="http://openconf#Portable_Reject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Member -->
+
+    <owl:Class rdf:about="http://openconf#Member">
+        <rdfs:subClassOf rdf:resource="http://openconf#People"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Moderate -->
+
+    <owl:Class rdf:about="http://openconf#Moderate">
+        <rdfs:subClassOf rdf:resource="http://openconf#Reviewer_Famliliarity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Must_Accept -->
+
+    <owl:Class rdf:about="http://openconf#Must_Accept">
+        <rdfs:subClassOf rdf:resource="http://openconf#Reccommendation"/>
+        <owl:disjointWith rdf:resource="http://openconf#Portable_Reject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Networking -->
+
+    <owl:Class rdf:about="http://openconf#Networking">
+        <rdfs:subClassOf rdf:resource="http://openconf#Topics"/>
+        <owl:disjointWith rdf:resource="http://openconf#Programming"/>
+        <owl:disjointWith rdf:resource="http://openconf#RFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#New_Information -->
+
+    <owl:Class rdf:about="http://openconf#New_Information">
+        <rdfs:subClassOf rdf:resource="http://openconf#Overall_Value"/>
+        <owl:disjointWith rdf:resource="http://openconf#New_Perspective_Issue_Problem_Solving"/>
+        <owl:disjointWith rdf:resource="http://openconf#Not_Much"/>
+        <owl:disjointWith rdf:resource="http://openconf#Other"/>
+        <owl:disjointWith rdf:resource="http://openconf#Valuable_Confirmation_of_Present_Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#New_Perspective_Issue_Problem_Solving -->
+
+    <owl:Class rdf:about="http://openconf#New_Perspective_Issue_Problem_Solving">
+        <rdfs:subClassOf rdf:resource="http://openconf#Overall_Value"/>
+        <owl:disjointWith rdf:resource="http://openconf#Not_Much"/>
+        <owl:disjointWith rdf:resource="http://openconf#Other"/>
+        <owl:disjointWith rdf:resource="http://openconf#Valuable_Confirmation_of_Present_Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Not_Much -->
+
+    <owl:Class rdf:about="http://openconf#Not_Much">
+        <rdfs:subClassOf rdf:resource="http://openconf#Overall_Value"/>
+        <owl:disjointWith rdf:resource="http://openconf#Other"/>
+        <owl:disjointWith rdf:resource="http://openconf#Valuable_Confirmation_of_Present_Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Other -->
+
+    <owl:Class rdf:about="http://openconf#Other">
+        <rdfs:subClassOf rdf:resource="http://openconf#Overall_Value"/>
+        <owl:disjointWith rdf:resource="http://openconf#Valuable_Confirmation_of_Present_Knowledge"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Overall_Value -->
+
+    <owl:Class rdf:about="http://openconf#Overall_Value">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Clarity_to_Present_Understanding"/>
+                    <rdf:Description rdf:about="http://openconf#New_Information"/>
+                    <rdf:Description rdf:about="http://openconf#New_Perspective_Issue_Problem_Solving"/>
+                    <rdf:Description rdf:about="http://openconf#Not_Much"/>
+                    <rdf:Description rdf:about="http://openconf#Other"/>
+                    <rdf:Description rdf:about="http://openconf#Valuable_Confirmation_of_Present_Knowledge"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://openconf#Review_Values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Paper -->
+
+    <owl:Class rdf:about="http://openconf#Paper">
+        <rdfs:subClassOf rdf:resource="http://openconf#Domain_Topic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://openconf#is_written_by"/>
+                <owl:someValuesFrom rdf:resource="http://openconf#Author"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Paper_Categorization -->
+
+    <owl:Class rdf:about="http://openconf#Paper_Categorization">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Balanced_Theory_and_Practice"/>
+                    <rdf:Description rdf:about="http://openconf#Highly_Practical"/>
+                    <rdf:Description rdf:about="http://openconf#Highly_Theoretical"/>
+                    <rdf:Description rdf:about="http://openconf#Tends_Towards_Practical"/>
+                    <rdf:Description rdf:about="http://openconf#Tends_Towards_Theoretical"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://openconf#Review_Values"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Paper_File -->
+
+    <owl:Class rdf:about="http://openconf#Paper_File">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Domain_Topic"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#is_Type"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Format"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Paper_Review -->
+
+    <owl:Class rdf:about="http://openconf#Paper_Review">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Domain_Topic"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#Review_made_by"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Reviewer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#appropriate_length"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Long_bool"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#has_Categorization"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Paper_Categorization"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#has_Overall"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Overall_Value"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#has_Reccommendation"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Reccommendation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#is_Candidate_for_Award"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Long_bool"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Review of the Paper</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#People -->
+
+    <owl:Class rdf:about="http://openconf#People">
+        <rdfs:subClassOf rdf:resource="http://openconf#Domain_Topic"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obecná třída pro všechny lidi</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Planed_Paper -->
+
+    <owl:Class rdf:about="http://openconf#Planed_Paper">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Submitted_Paper"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#has_Result"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Result_of_Advocate"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#has_Review"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Paper_Review"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#is_planned_in"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Conference_Program"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paper planned in the program of the conference</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Portable_Reject -->
+
+    <owl:Class rdf:about="http://openconf#Portable_Reject">
+        <rdfs:subClassOf rdf:resource="http://openconf#Reccommendation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#PostScript -->
+
+    <owl:Class rdf:about="http://openconf#PostScript">
+        <rdfs:subClassOf rdf:resource="http://openconf#Format"/>
+        <owl:disjointWith rdf:resource="http://openconf#RTF"/>
+        <owl:disjointWith rdf:resource="http://openconf#Text"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Program_Committee -->
+
+    <owl:Class rdf:about="http://openconf#Program_Committee">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Committees"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#has_member"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Advocate"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#has_member"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Program_chair"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Program_chair -->
+
+    <owl:Class rdf:about="http://openconf#Program_chair">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Member"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#has_made_review"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Conference_Program"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#is_member_of"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Program_Committee"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#made_program"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Conference_Program"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Programming -->
+
+    <owl:Class rdf:about="http://openconf#Programming">
+        <rdfs:subClassOf rdf:resource="http://openconf#Topics"/>
+        <owl:disjointWith rdf:resource="http://openconf#RFC"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#RFC -->
+
+    <owl:Class rdf:about="http://openconf#RFC">
+        <rdfs:subClassOf rdf:resource="http://openconf#Topics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#RTF -->
+
+    <owl:Class rdf:about="http://openconf#RTF">
+        <rdfs:subClassOf rdf:resource="http://openconf#Format"/>
+        <owl:disjointWith rdf:resource="http://openconf#Text"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Reccommendation -->
+
+    <owl:Class rdf:about="http://openconf#Reccommendation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Clear_Accept"/>
+                    <rdf:Description rdf:about="http://openconf#Clear_Reject"/>
+                    <rdf:Description rdf:about="http://openconf#Marginal_Tend_to_Accept"/>
+                    <rdf:Description rdf:about="http://openconf#Marginal_Tend_to_Reject"/>
+                    <rdf:Description rdf:about="http://openconf#Must_Accept"/>
+                    <rdf:Description rdf:about="http://openconf#Portable_Reject"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://openconf#Review_Values"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Review Reccommendations</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Result_of_Advocate -->
+
+    <owl:Class rdf:about="http://openconf#Result_of_Advocate">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Value_Partition"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://openconf#Accept"/>
+                            <rdf:Description rdf:about="http://openconf#Reject"/>
+                            <rdf:Description rdf:about="http://openconf#Unsure"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Review_Committee -->
+
+    <owl:Class rdf:about="http://openconf#Review_Committee">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Committees"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#has_member"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Reviewer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Review_Values -->
+
+    <owl:Class rdf:about="http://openconf#Review_Values">
+        <rdfs:subClassOf rdf:resource="http://openconf#Value_Partition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Reviewed_Paper -->
+
+    <owl:Class rdf:about="http://openconf#Reviewed_Paper">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Submitted_Paper"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#has_Review"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Paper_Review"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Reviewer -->
+
+    <owl:Class rdf:about="http://openconf#Reviewer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Member"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#has_made_review"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Paper_Review"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#is_From_Area_of_Interest"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Topics"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://openconf#is_member_of"/>
+                        <owl:someValuesFrom rdf:resource="http://openconf#Review_Committee"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Reviewer_Famliliarity -->
+
+    <owl:Class rdf:about="http://openconf#Reviewer_Famliliarity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Review_Values"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://openconf#High"/>
+                            <rdf:Description rdf:about="http://openconf#Low"/>
+                            <rdf:Description rdf:about="http://openconf#Moderate"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reviewer familiarity with subject matter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Submitted_Paper -->
+
+    <owl:Class rdf:about="http://openconf#Submitted_Paper">
+        <rdfs:subClassOf rdf:resource="http://openconf#Paper"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://openconf#has_been_sent_by"/>
+                <owl:someValuesFrom rdf:resource="http://openconf#Contact_Author"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://openconf#is_stored_in"/>
+                <owl:someValuesFrom rdf:resource="http://openconf#Paper_File"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Tends_Towards_Practical -->
+
+    <owl:Class rdf:about="http://openconf#Tends_Towards_Practical">
+        <rdfs:subClassOf rdf:resource="http://openconf#Paper_Categorization"/>
+        <owl:disjointWith rdf:resource="http://openconf#Tends_Towards_Theoretical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Tends_Towards_Theoretical -->
+
+    <owl:Class rdf:about="http://openconf#Tends_Towards_Theoretical">
+        <rdfs:subClassOf rdf:resource="http://openconf#Paper_Categorization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Text -->
+
+    <owl:Class rdf:about="http://openconf#Text">
+        <rdfs:subClassOf rdf:resource="http://openconf#Format"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Topics -->
+
+    <owl:Class rdf:about="http://openconf#Topics">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://openconf#Classic_Papers"/>
+                    <rdf:Description rdf:about="http://openconf#Computer_Science"/>
+                    <rdf:Description rdf:about="http://openconf#Humour"/>
+                    <rdf:Description rdf:about="http://openconf#Networking"/>
+                    <rdf:Description rdf:about="http://openconf#Programming"/>
+                    <rdf:Description rdf:about="http://openconf#RFC"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://openconf#Value_Partition"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">souhrný seznam základních témat</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Valuable_Confirmation_of_Present_Knowledge -->
+
+    <owl:Class rdf:about="http://openconf#Valuable_Confirmation_of_Present_Knowledge">
+        <rdfs:subClassOf rdf:resource="http://openconf#Overall_Value"/>
+    </owl:Class>
+    
+
+
+    <!-- http://openconf#Value_Partition -->
+
+    <owl:Class rdf:about="http://openconf#Value_Partition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://openconf#Accept -->
+
+    <owl:NamedIndividual rdf:about="http://openconf#Accept">
+        <rdf:type rdf:resource="http://openconf#Result_of_Advocate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openconf#Areas_of_interest -->
+
+    <owl:NamedIndividual rdf:about="http://openconf#Areas_of_interest">
+        <rdf:type rdf:resource="http://openconf#Topics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openconf#No -->
+
+    <owl:NamedIndividual rdf:about="http://openconf#No">
+        <rdf:type rdf:resource="http://openconf#Long_bool"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openconf#Reject -->
+
+    <owl:NamedIndividual rdf:about="http://openconf#Reject">
+        <rdf:type rdf:resource="http://openconf#Result_of_Advocate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openconf#Technical_Area -->
+
+    <owl:NamedIndividual rdf:about="http://openconf#Technical_Area">
+        <rdf:type rdf:resource="http://openconf#Topics"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openconf#Unsure -->
+
+    <owl:NamedIndividual rdf:about="http://openconf#Unsure">
+        <rdf:type rdf:resource="http://openconf#Long_bool"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://openconf#Yes -->
+
+    <owl:NamedIndividual rdf:about="http://openconf#Yes">
+        <rdf:type rdf:resource="http://openconf#Long_bool"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

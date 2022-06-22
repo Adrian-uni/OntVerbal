@@ -1,0 +1,820 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://pcs#"
+     xml:base="http://pcs"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://pcs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://pcs#accept -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#accept">
+        <owl:inverseOf rdf:resource="http://pcs#accepted_by"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://pcs#CommitteeMember"/>
+        <rdfs:range rdf:resource="http://pcs#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#accepted_by -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#accepted_by">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://pcs#Paper"/>
+        <rdfs:range rdf:resource="http://pcs#CommitteeMember"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#assign_review -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#assign_review">
+        <owl:inverseOf rdf:resource="http://pcs#assigned_review_by"/>
+        <rdfs:domain rdf:resource="http://pcs#Primary_Reviewer"/>
+        <rdfs:range rdf:resource="http://pcs#Review"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#assigned_review_by -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#assigned_review_by">
+        <rdfs:domain rdf:resource="http://pcs#Review"/>
+        <rdfs:range rdf:resource="http://pcs#Primary_Reviewer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#generate -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#generate">
+        <owl:inverseOf rdf:resource="http://pcs#generated_by"/>
+        <rdfs:domain rdf:resource="http://pcs#Administrator"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://pcs#Electronic_proceeding"/>
+                    <rdf:Description rdf:about="http://pcs#Report"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#generated_by -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#generated_by">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://pcs#Electronic_proceeding"/>
+                    <rdf:Description rdf:about="http://pcs#Report"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://pcs#Administrator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#get -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#get">
+        <rdfs:domain rdf:resource="http://pcs#PERSON"/>
+        <rdfs:range rdf:resource="http://pcs#Email"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#has_conference_member -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#has_conference_member">
+        <owl:inverseOf rdf:resource="http://pcs#member_of_conference"/>
+        <rdfs:domain rdf:resource="http://pcs#Conference"/>
+        <rdfs:range rdf:resource="http://pcs#ConferenceMember"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#loggin_in -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#loggin_in">
+        <rdfs:domain rdf:resource="http://pcs#PERSON"/>
+        <rdfs:range rdf:resource="http://pcs#System"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#member_of_conference -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#member_of_conference">
+        <rdfs:domain rdf:resource="http://pcs#ConferenceMember"/>
+        <rdfs:range rdf:resource="http://pcs#Conference"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#rate_paper -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#rate_paper">
+        <owl:inverseOf rdf:resource="http://pcs#rateed_paper_by"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://pcs#External_Reviewer"/>
+                    <rdf:Description rdf:about="http://pcs#Secondary_Reviewer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://pcs#Accepted_paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#rateed_paper_by -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#rateed_paper_by">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://pcs#Accepted_paper"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://pcs#External_Reviewer"/>
+                    <rdf:Description rdf:about="http://pcs#Secondary_Reviewer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#read_paper -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#read_paper">
+        <owl:inverseOf rdf:resource="http://pcs#read_paper_by"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://pcs#External_Reviewer"/>
+                    <rdf:Description rdf:about="http://pcs#Secondary_Reviewer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://pcs#Accepted_paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#read_paper_by -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#read_paper_by">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://pcs#Accepted_paper"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://pcs#External_Reviewer"/>
+                    <rdf:Description rdf:about="http://pcs#Secondary_Reviewer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#reject_paper -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#reject_paper">
+        <owl:inverseOf rdf:resource="http://pcs#rejected_paper_by"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://pcs#CommitteeMember"/>
+        <rdfs:range rdf:resource="http://pcs#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#rejected_paper_by -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#rejected_paper_by">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://pcs#Paper"/>
+        <rdfs:range rdf:resource="http://pcs#CommitteeMember"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#send -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#send">
+        <owl:inverseOf rdf:resource="http://pcs#sended_by"/>
+        <rdfs:domain rdf:resource="http://pcs#Administrator"/>
+        <rdfs:range rdf:resource="http://pcs#Email"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#sended_by -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#sended_by">
+        <rdfs:domain rdf:resource="http://pcs#Email"/>
+        <rdfs:range rdf:resource="http://pcs#Administrator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#submit -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#submit">
+        <owl:inverseOf rdf:resource="http://pcs#submited_by"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://pcs#PERSON"/>
+        <rdfs:range rdf:resource="http://pcs#DOCUMENT"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#submited_by -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#submited_by">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://pcs#DOCUMENT"/>
+        <rdfs:range rdf:resource="http://pcs#PERSON"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#write_paper -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#write_paper">
+        <owl:inverseOf rdf:resource="http://pcs#written_paper_by"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://pcs#Author"/>
+        <rdfs:range rdf:resource="http://pcs#Paper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#write_review -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#write_review">
+        <owl:inverseOf rdf:resource="http://pcs#written_review_by"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://pcs#External_Reviewer"/>
+                    <rdf:Description rdf:about="http://pcs#Secondary_Reviewer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://pcs#Review"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#written_paper_by -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#written_paper_by">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://pcs#Paper"/>
+        <rdfs:range rdf:resource="http://pcs#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://pcs#written_review_by -->
+
+    <owl:ObjectProperty rdf:about="http://pcs#written_review_by">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://pcs#Review"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://pcs#External_Reviewer"/>
+                    <rdf:Description rdf:about="http://pcs#Secondary_Reviewer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://pcs#Date -->
+
+    <owl:DatatypeProperty rdf:about="http://pcs#Date">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://pcs#Conference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcs#Document_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://pcs#Document_ID">
+        <rdfs:domain rdf:resource="http://pcs#DOCUMENT"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcs#E-mail -->
+
+    <owl:DatatypeProperty rdf:about="http://pcs#E-mail">
+        <rdfs:domain rdf:resource="http://pcs#PERSON"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcs#Message_of_email -->
+
+    <owl:DatatypeProperty rdf:about="http://pcs#Message_of_email">
+        <rdfs:domain rdf:resource="http://pcs#Email"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcs#NAME -->
+
+    <owl:DatatypeProperty rdf:about="http://pcs#NAME">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://pcs#Conference"/>
+                    <rdf:Description rdf:about="http://pcs#PERSON"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcs#Password -->
+
+    <owl:DatatypeProperty rdf:about="http://pcs#Password">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://pcs#PERSON"/>
+                    <rdf:Description rdf:about="http://pcs#System"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcs#Receiver_of_email -->
+
+    <owl:DatatypeProperty rdf:about="http://pcs#Receiver_of_email">
+        <rdfs:domain rdf:resource="http://pcs#Email"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcs#Score -->
+
+    <owl:DatatypeProperty rdf:about="http://pcs#Score">
+        <rdfs:domain rdf:resource="http://pcs#Accepted_paper"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcs#Subject_of_email -->
+
+    <owl:DatatypeProperty rdf:about="http://pcs#Subject_of_email">
+        <rdfs:domain rdf:resource="http://pcs#Email"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcs#Summary -->
+
+    <owl:DatatypeProperty rdf:about="http://pcs#Summary">
+        <rdfs:domain rdf:resource="http://pcs#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcs#Title -->
+
+    <owl:DatatypeProperty rdf:about="http://pcs#Title">
+        <rdfs:domain rdf:resource="http://pcs#Paper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcs#Topic_of_conference -->
+
+    <owl:DatatypeProperty rdf:about="http://pcs#Topic_of_conference">
+        <rdfs:domain rdf:resource="http://pcs#Conference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcs#User_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://pcs#User_ID">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://pcs#PERSON"/>
+                    <rdf:Description rdf:about="http://pcs#System"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://pcs#WebSite -->
+
+    <owl:DatatypeProperty rdf:about="http://pcs#WebSite">
+        <rdfs:domain rdf:resource="http://pcs#Conference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://pcs#Accepted_paper -->
+
+    <owl:Class rdf:about="http://pcs#Accepted_paper">
+        <rdfs:subClassOf rdf:resource="http://pcs#Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pcs#Administrator -->
+
+    <owl:Class rdf:about="http://pcs#Administrator">
+        <rdfs:subClassOf rdf:resource="http://pcs#PERSON"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pcs#generate"/>
+                <owl:someValuesFrom rdf:resource="http://pcs#Electronic_proceeding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pcs#generate"/>
+                <owl:someValuesFrom rdf:resource="http://pcs#Report"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pcs#send"/>
+                <owl:someValuesFrom rdf:resource="http://pcs#Email"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pcs#Author -->
+
+    <owl:Class rdf:about="http://pcs#Author">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pcs#submit"/>
+                <owl:someValuesFrom rdf:resource="http://pcs#Paper"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://pcs#ConferenceMember"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pcs#write_paper"/>
+                <owl:someValuesFrom rdf:resource="http://pcs#Paper"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pcs#CD -->
+
+    <owl:Class rdf:about="http://pcs#CD">
+        <rdfs:subClassOf rdf:resource="http://pcs#Electronic_proceeding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pcs#CommitteeMember -->
+
+    <owl:Class rdf:about="http://pcs#CommitteeMember">
+        <rdfs:subClassOf rdf:resource="http://pcs#ConferenceMember"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pcs#Conference -->
+
+    <owl:Class rdf:about="http://pcs#Conference"/>
+    
+
+
+    <!-- http://pcs#ConferenceMember -->
+
+    <owl:Class rdf:about="http://pcs#ConferenceMember">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pcs#get"/>
+                <owl:someValuesFrom rdf:resource="http://pcs#Invitation"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://pcs#PERSON"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pcs#DOCUMENT -->
+
+    <owl:Class rdf:about="http://pcs#DOCUMENT"/>
+    
+
+
+    <!-- http://pcs#Electronic_proceeding -->
+
+    <owl:Class rdf:about="http://pcs#Electronic_proceeding"/>
+    
+
+
+    <!-- http://pcs#Email -->
+
+    <owl:Class rdf:about="http://pcs#Email"/>
+    
+
+
+    <!-- http://pcs#External_Reviewer -->
+
+    <owl:Class rdf:about="http://pcs#External_Reviewer">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pcs#submit"/>
+                <owl:someValuesFrom rdf:resource="http://pcs#Review"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://pcs#PERSON"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pcs#rate_paper"/>
+                <owl:someValuesFrom rdf:resource="http://pcs#Accepted_paper"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pcs#read_paper"/>
+                <owl:someValuesFrom rdf:resource="http://pcs#Accepted_paper"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pcs#write_review"/>
+                <owl:someValuesFrom rdf:resource="http://pcs#Review"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pcs#Information -->
+
+    <owl:Class rdf:about="http://pcs#Information">
+        <rdfs:subClassOf rdf:resource="http://pcs#Email"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pcs#Invitation -->
+
+    <owl:Class rdf:about="http://pcs#Invitation">
+        <rdfs:subClassOf rdf:resource="http://pcs#Email"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pcs#PERSON -->
+
+    <owl:Class rdf:about="http://pcs#PERSON">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pcs#loggin_in"/>
+                <owl:someValuesFrom rdf:resource="http://pcs#System"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pcs#get"/>
+                <owl:someValuesFrom rdf:resource="http://pcs#Information"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pcs#Paper -->
+
+    <owl:Class rdf:about="http://pcs#Paper">
+        <rdfs:subClassOf rdf:resource="http://pcs#DOCUMENT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pcs#Primary_Reviewer -->
+
+    <owl:Class rdf:about="http://pcs#Primary_Reviewer">
+        <rdfs:subClassOf rdf:resource="http://pcs#CommitteeMember"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pcs#accept"/>
+                <owl:someValuesFrom rdf:resource="http://pcs#Paper"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pcs#assign_review"/>
+                <owl:someValuesFrom rdf:resource="http://pcs#Review"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pcs#Programme -->
+
+    <owl:Class rdf:about="http://pcs#Programme">
+        <rdfs:subClassOf rdf:resource="http://pcs#Conference"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pcs#Rejected_paper -->
+
+    <owl:Class rdf:about="http://pcs#Rejected_paper">
+        <rdfs:subClassOf rdf:resource="http://pcs#Paper"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pcs#Report -->
+
+    <owl:Class rdf:about="http://pcs#Report"/>
+    
+
+
+    <!-- http://pcs#Review -->
+
+    <owl:Class rdf:about="http://pcs#Review">
+        <rdfs:subClassOf rdf:resource="http://pcs#DOCUMENT"/>
+    </owl:Class>
+    
+
+
+    <!-- http://pcs#Secondary_Reviewer -->
+
+    <owl:Class rdf:about="http://pcs#Secondary_Reviewer">
+        <rdfs:subClassOf rdf:resource="http://pcs#CommitteeMember"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://pcs#write_review"/>
+                <owl:someValuesFrom rdf:resource="http://pcs#Review"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://pcs#System -->
+
+    <owl:Class rdf:about="http://pcs#System"/>
+    
+
+
+    <!-- http://pcs#Web_site -->
+
+    <owl:Class rdf:about="http://pcs#Web_site">
+        <rdfs:subClassOf rdf:resource="http://pcs#Electronic_proceeding"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

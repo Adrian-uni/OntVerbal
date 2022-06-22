@@ -1,0 +1,224 @@
+<Template>
+
+
+        <Language>es</Language>
+
+        <Regular>
+            <Antes></Antes>
+            <Despues></Despues>
+        </Regular>
+
+
+<!-- INFORMACION DE INDIVIDUOS Y ENTIDADES OBTENIDA CON JENA -->
+
+        <Restriccion id="DescriptionClass">
+                <Text>T[?name] es una clase</Text>
+        </Restriccion>
+
+        <Restriccion id="ClassAssertion">
+                 <Text>T[?name] es T[?0]</Text>
+        </Restriccion>
+
+        <Restriccion id="DescripcionE">
+        		<Text>T[?name] es T[?0]</Text>
+        		<Loop> o T[?0]</Loop>
+        </Restriccion>
+
+        <Restriccion id="Disjoint">
+                <Text>T[?name] es T[?0]</Text>
+                <Loop> o T[?0]</Loop>
+        </Restriccion>
+
+        <Restriccion id="ObjectProperty">
+                <Text>T[?name] T[?name] T[?0] T[?1]</Text>
+                <Loop> T[?name] T[?0] T[?1]</Loop>
+        </Restriccion>
+
+
+
+
+
+
+
+
+<!--    INFORMACION DE INDIVIDUOS Y ENTIDADES OBTENIDA DEL XML     -->
+
+        <Restriccion id="EquivalentClasses">
+                <Text>T[?name] es una clase</Text>
+                <Extraccion>
+                    <Class>[?name]</Class>
+                </Extraccion>
+        </Restriccion>
+
+        <Restriccion id="ObjectIntersectionOf">
+                <Text> es T[?name]</Text>
+                <Extraccion>
+                    <Class>[?name]</Class>
+                </Extraccion>
+        </Restriccion>
+
+        <Restriccion id="DataMinCardinality">
+                <Text> minimo T[?content] T[?type]</Text>
+                <Extraccion>
+                    <DataProperty>[?type]</DataProperty>
+                    <Content>[?content]</Content>
+                </Extraccion>
+        </Restriccion>
+
+        <Restriccion id="ObjectMinCardinality">
+                <Text> T[?property] minimo T[?content] T[?name]</Text>
+                <Extraccion>
+                    <Class>[?name]</Class>
+                    <ObjectProperty>[?property]</ObjectProperty>
+                    <Content>[?content]</Content>
+                </Extraccion>
+        </Restriccion>
+
+        <Restriccion id="ObjectUnionOf">
+                <Text> T[?name]</Text>
+                <Loop> y T[?name]</Loop>
+                <Extraccion>
+                    <Class>[?name]</Class>
+                </Extraccion>
+        </Restriccion>
+
+        <Restriccion id="ObjectOneOf">
+                <Text> T[?name]</Text>
+                <Loop> o T[?name]</Loop>
+                <Extraccion>
+                    <NamedIndividual>[?name]</NamedIndividual>
+                </Extraccion>
+        </Restriccion>
+
+        <Restriccion id="ObjectAllValuesFrom">
+                <Text> todos T[?property]</Text>
+                <Extraccion>
+                    <ObjectProperty>[?property]</ObjectProperty>
+                </Extraccion>
+        </Restriccion>
+
+        <Restriccion id="ObjectSomeValuesFrom">
+                <Text> T[?property] T[?class]</Text>
+                <Extraccion>
+                    <ObjectProperty>[?property]</ObjectProperty>
+                    <Class>[?class]</Class>
+                </Extraccion>
+        </Restriccion>
+
+        <Restriccion id="DataSomeValuesFrom">
+                <Text> T[?property]</Text>
+                <Extraccion>
+                    <DataProperty>[?property]</DataProperty>
+                </Extraccion>
+        </Restriccion>
+
+        <Restriccion id="DatatypeRestriction">
+                <Text> como</Text>
+        </Restriccion>
+
+        <Restriccion id="ObjectHasValue">
+                <Text> T[?property] T[?individual]</Text>
+                <Extraccion>
+                    <ObjectProperty>[?property]</ObjectProperty>
+                    <NamedIndividual>[?individual]</NamedIndividual>
+                </Extraccion>
+        </Restriccion>
+
+        <Restriccion id="FacetRestriction">
+                <Text> T[?content] T[?value]</Text>
+                <Extraccion>
+                    <Content>[?content]</Content>
+                    <Literal>.._..</Literal>
+                </Extraccion>
+        </Restriccion>
+
+        <Restriccion id="Literal">
+                <Text> </Text>
+                <Extraccion>
+                    <Value>[?value]</Value>
+                </Extraccion>
+        </Restriccion>
+
+        <Restriccion id="IRI">
+                <Text> T[?value]</Text>
+                <Extraccion>
+                    <Value>[?value]</Value>
+                </Extraccion>
+        </Restriccion>
+
+        <Restriccion id="SubClassOf">
+                <Text> T[?name]</Text>
+                <Loop> es T[?name]</Loop>
+                <Extraccion>
+                    <Class>[?name]</Class>
+                </Extraccion>
+        </Restriccion>
+
+        <Restriccion id="DataPropertyAssertion">
+                <Text>T[?name] T[?property] T[?value]</Text>
+                <Loop> y T[?property] T[?value]</Loop>
+                <Extraccion>
+                    <DataProperty>[?property]</DataProperty>
+                    <NamedIndividual>[?name]</NamedIndividual>
+                    <Literal>.._..</Literal>
+                </Extraccion>
+        </Restriccion>
+
+        <Restriccion id="ObjectPropertyAssertion">
+                <Text>T[?name] T[?property]</Text>
+                <Loop> T[?name]</Loop>
+                <Extraccion>
+                    <ObjectProperty>[?property]</ObjectProperty>
+                    <NamedIndividual>[?name]</NamedIndividual>
+                </Extraccion>
+        </Restriccion>
+
+        <Restriccion id="AnnotationAssertion">
+                 <Text>T[?value] T[?property] T[?value]</Text>
+                 <Loop>#</Loop>
+                 <Extraccion>
+                     <AnnotationProperty>[?property]</AnnotationProperty>
+                     <IRI>.._..</IRI>
+                     <Literal>.._..</Literal>
+                 </Extraccion>
+        </Restriccion>
+
+
+
+<!--    INFORMACION DE PROPIEDADES OBTENIDA DE JENA     -->
+
+        <Restriccion id="DescriptionProperty">
+                <Text>T[?name]</Text>
+        </Restriccion>
+
+        <Restriccion id="Domain">
+                <Text>T[?name] dominio T[?0]</Text>
+        </Restriccion>
+
+        <Restriccion id="Range">
+                <Text>T[?name] rango T[?0]</Text>
+        </Restriccion>
+
+
+
+<!--    INFORMACION DE PROPIEDADES OBTENIDA DEL XML     -->
+
+
+
+        <Restriccion id="SubObjectPropertyOf">
+                 <Text>T[?name] sub-propiedad</Text>
+                 <Loop> T[?name]</Loop>
+                 <Extraccion>
+                     <ObjectProperty>[?name]</ObjectProperty>
+                 </Extraccion>
+        </Restriccion>
+
+        <Restriccion id="InverseObjectProperties">
+                 <Text>T[?name] inversa </Text>
+                 <Loop> T[?name]</Loop>
+                 <Extraccion>
+                     <ObjectProperty>[?name]</ObjectProperty>
+                 </Extraccion>
+        </Restriccion>
+
+</Template>
