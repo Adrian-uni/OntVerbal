@@ -5,7 +5,7 @@ It is a multi-language verbalizer of ontologies written in Java, currently it ha
 
 
 Usage:
-        ./program  ontology_file  template_file  boolInference  boolTranslation
+        ./program  ontology_file  \t template_file  \t boolInference  \t boolTranslation
         
         if boolInference = 1 then we use inference on the ontology, other we do not.
         
