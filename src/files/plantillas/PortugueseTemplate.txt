@@ -1,11 +1,8 @@
 <Template>
 
+
         <Language>pt</Language>
 
-        <Regular>
-            <Antes></Antes>
-            <Despues></Despues>
-        </Regular>
 
 <!-- INFORMACION DE INDIVIDUOS Y ENTIDADES OBTENIDA CON JENA -->
 
@@ -13,91 +10,113 @@
                 <Text>T[?name] é uma classe</Text>
         </Restriccion>
 
-        <Restriccion id="ClassAssertion">
-                 <Text>O indivíduo T[?name] é um elemento classificado como T[?0]</Text>
+        <Restriccion id="ClassAssertionJ">
+                 <Text>T[?name] é um_uma G[?0]</Text>
         </Restriccion>
 
         <Restriccion id="DescripcionE">
-        		<Text>um_uma G[?name] pode ser classificado como qualquer uma das seguintes classes: T[?0]</Text>
-        		<Loop> ou T[?0]</Loop>
+                <Text>Um_Uma G[?name] é um tipo de T[?0]</Text>
+                <Loop> y T[?0]</Loop>
         </Restriccion>
 
         <Restriccion id="Disjoint">
-                <Text>um_uma G[?name] pode ser um_uma G[?0]</Text>
-                <Loop> ou T[?0]</Loop>
-                    <Finish> mas não mais do que um destes de cada vez</Finish>
+                <Text>Um_Uma G[?name] pode ser um_uma G[?0]</Text>
+                <Loop> ou um_uma G[?0]</Loop>
+                <Finish> mas um_uma G[?name] não pode ser mais do que um destes de cada vez</Finish>
         </Restriccion>
 
         <Restriccion id="ObjectProperty">
-                <Text>As características de T[?name] são: ele/ela T[?0] T[?1]</Text>
-                <Loop>, além disso ele/ela T[?0] T[?1]</Loop>
+                <Text>LAs características de T[?name] são: T[?name] T[?0] T[?1]</Text>
+                <Loop> , e T[?name] T[?0] T[?1]</Loop>
         </Restriccion>
-
-
-
-
-
-
 
 
 <!--    INFORMACION DE INDIVIDUOS Y ENTIDADES OBTENIDA DEL XML     -->
 
         <Restriccion id="EquivalentClasses">
-                <Text>um_uma G[?name] é um elemento</Text>
+                <Text>Um_Uma G[?name] </Text>
                 <Extraccion>
                     <Class>[?name]</Class>
                 </Extraccion>
         </Restriccion>
 
+        <Restriccion id="ClassAssertion">
+                 <Text>T[?name] é um tipo de T[?class]</Text>
+                 <Extraccion>
+                     <Class>[?class]</Class>
+                     <NamedIndividual>[?name]</NamedIndividual>
+                 </Extraccion>
+        </Restriccion>
+
         <Restriccion id="ObjectIntersectionOf">
-                <Text> que é um tipo de T[?name]</Text>
+                <Text> é um tipo de T[?class]</Text>
                 <Extraccion>
-                    <Class>[?name]</Class>
+                    <Class>[?class]</Class>
                 </Extraccion>
         </Restriccion>
 
         <Restriccion id="DataMinCardinality">
-                <Text> que tenha pelo menos T[?content] T[?type]</Text>
+                <Text> tem pelo menos T[?content] T[?type]</Text>
                 <Extraccion>
                     <DataProperty>[?type]</DataProperty>
                     <Content>[?content]</Content>
                 </Extraccion>
         </Restriccion>
 
-        <Restriccion id="ObjectMinCardinality">
-                <Text> que tem T[?property] pelo menos T[?content] T[?name]</Text>
+
+        <Restriccion id="ObjectExactCardinality">
+                <Text> tem exatamente T[?content] T[?type]</Text>
                 <Extraccion>
-                    <Class>[?name]</Class>
+                    <ObjectProperty>[?type]</ObjectProperty>
+                    <Content>[?content]</Content>
+                </Extraccion>
+        </Restriccion>
+
+        <Restriccion id="ObjectMinCardinality">
+                <Text> tem T[?property] ao menos T[?content] T[?class]</Text>
+                <Extraccion>
+                    <Class>[?class]</Class>
                     <ObjectProperty>[?property]</ObjectProperty>
                     <Content>[?content]</Content>
                 </Extraccion>
         </Restriccion>
 
-        <Restriccion id="ObjectUnionOf">
-                <Text> T[?name]</Text>
-                <Loop> e T[?name]</Loop>
+        <Restriccion id="ObjectMaxCardinality">
+                <Text> tem T[?property] como máximo T[?content] T[?class]</Text>
                 <Extraccion>
-                    <Class>[?name]</Class>
+                    <Class>[?class]</Class>
+                    <ObjectProperty>[?property]</ObjectProperty>
+                    <Content>[?content]</Content>
+                </Extraccion>
+        </Restriccion>
+
+
+
+        <Restriccion id="ObjectUnionOf">
+                <Text> é um_uma G[?class]</Text>
+                <Loop> e um_uma G[?class]</Loop>
+                <Extraccion>
+                    <Class>[?class]</Class>
                 </Extraccion>
         </Restriccion>
 
         <Restriccion id="ObjectOneOf">
-                <Text> que pode ter como valor T[?name]</Text>
-                <Loop> ou T[?name]</Loop>
+                <Text> pode ter como valor T[?individual]</Text>
+                <Loop> ou T[?individual]</Loop>
                 <Extraccion>
-                    <NamedIndividual>[?name]</NamedIndividual>
+                    <NamedIndividual>[?individual]</NamedIndividual>
                 </Extraccion>
         </Restriccion>
 
         <Restriccion id="ObjectAllValuesFrom">
-                <Text> que tudo T[?property]</Text>
+                <Text> e todos T[?property]</Text>
                 <Extraccion>
                     <ObjectProperty>[?property]</ObjectProperty>
                 </Extraccion>
         </Restriccion>
 
         <Restriccion id="ObjectSomeValuesFrom">
-                <Text> o que T[?property] T[?class]</Text>
+                <Text> T[?property] T[?class]</Text>
                 <Extraccion>
                     <ObjectProperty>[?property]</ObjectProperty>
                     <Class>[?class]</Class>
@@ -105,7 +124,7 @@
         </Restriccion>
 
         <Restriccion id="DataSomeValuesFrom">
-                <Text>, além de T[?property]</Text>
+                <Text> , e que T[?property]</Text>
                 <Extraccion>
                     <DataProperty>[?property]</DataProperty>
                 </Extraccion>
@@ -116,7 +135,7 @@
         </Restriccion>
 
         <Restriccion id="ObjectHasValue">
-                <Text> que satisfaça essa T[?property] T[?individual]</Text>
+                <Text> que satisfaz isso T[?property] T[?individual]</Text>
                 <Extraccion>
                     <ObjectProperty>[?property]</ObjectProperty>
                     <NamedIndividual>[?individual]</NamedIndividual>
@@ -127,7 +146,7 @@
                 <Text> T[?content] T[?value]</Text>
                 <Extraccion>
                     <Content>[?content]</Content>
-                    <Literal>-</Literal>
+                    <Literal>none</Literal>
                 </Extraccion>
         </Restriccion>
 
@@ -146,8 +165,8 @@
         </Restriccion>
 
         <Restriccion id="SubClassOf">
-                <Text>um_uma G[?name] é um elemento</Text>
-                <Loop> cuja classe pai é T[?name]</Loop>
+                <Text>Um_Uma G[?name] </Text>
+                <Loop> é um tipo de T[?name]</Loop>
                 <Extraccion>
                     <Class>[?name]</Class>
                 </Extraccion>
@@ -155,17 +174,18 @@
 
         <Restriccion id="DataPropertyAssertion">
                 <Text>T[?name] tem como T[?property] o valor T[?value]</Text>
-                <Loop>, além disso tem como T[?property] o valor T[?value]</Loop>
+                <Loop> , e tem como T[?property] o valor T[?value]</Loop>
                 <Extraccion>
                     <DataProperty>[?property]</DataProperty>
                     <NamedIndividual>[?name]</NamedIndividual>
-                    <Literal>-</Literal>
+                    <Literal>none</Literal>
                 </Extraccion>
         </Restriccion>
 
         <Restriccion id="ObjectPropertyAssertion">
                 <Text>T[?name] é caracterizado por T[?property]</Text>
                 <Loop> T[?name]</Loop>
+                <Inverse> Além disso, T[?0] é caracterizado por: T[?1] T[?2]</Inverse>
                 <Extraccion>
                     <ObjectProperty>[?property]</ObjectProperty>
                     <NamedIndividual>[?name]</NamedIndividual>
@@ -173,12 +193,12 @@
         </Restriccion>
 
         <Restriccion id="AnnotationAssertion">
-                 <Text>T[?value] tem como T[?property] T[?value]</Text>
+                 <Text>Tem como T[?property] : T[?value]</Text>
                  <Loop>#</Loop>
                  <Extraccion>
                      <AnnotationProperty>[?property]</AnnotationProperty>
-                     <IRI>-</IRI>
-                     <Literal>-</Literal>
+                     <IRI>none</IRI>
+                     <Literal>none</Literal>
                  </Extraccion>
         </Restriccion>
 
@@ -191,44 +211,32 @@
         </Restriccion>
 
         <Restriccion id="Domain">
-                <Text>O domínio da propriedade T[?name] é T[?0]</Text>
+                <Text>T[?name] é uma propriedade de T[?0]</Text>
         </Restriccion>
 
         <Restriccion id="Range">
-                <Text>O intervalo da propriedade T[?name] é T[?0]</Text>
+                <Text>T[?name] pode tomar como valor T[?0]</Text>
         </Restriccion>
 
 
 
 <!--    INFORMACION DE PROPIEDADES OBTENIDA DEL XML     -->
 
-
-
         <Restriccion id="SubObjectPropertyOf">
-                 <Text>A propriedade T[?name] é uma subpropriedade da propriedade</Text>
-                 <Loop> T[?name], portanto, ambos têm o mesmo intervalo e domínio</Loop>
-                 <Extraccion>
-                     <ObjectProperty>[?name]</ObjectProperty>
-                 </Extraccion>
-        </Restriccion>
-
-        <Restriccion id="SubProperty">
-                 <Text>T[?name] é uma subpropriedade de T[?0]</Text>
-                 <Loop>, além disso, T[?name] é uma subpropriedade de T[?0]</Loop>
-        </Restriccion>
-
-        <Restriccion id="TopProperty">
-                 <Text>T[?name] é propriedade pai de T[?0]</Text>
-                 <Loop>, além disso T[?name] é propriedade pai de T[?0]</Loop>
-        </Restriccion>
-
-        <Restriccion id="InverseObjectProperties">
-                 <Text>A propriedade T[?name] é o inverso da propriedade</Text>
+                 <Text>A propriedade T[?name] é subpropriedade do imóvel</Text>
                  <Loop> T[?name]</Loop>
                  <Extraccion>
                      <ObjectProperty>[?name]</ObjectProperty>
                  </Extraccion>
         </Restriccion>
 
+        <Restriccion id="InverseObjectProperties">
+                 <Text>A propriedadeT[?name] é inversa à propriedade</Text>
+                 <Loop> T[?name]</Loop>
+                 <Inverse> Além disso, a propriedade T[?0] é inversa à propriedade T[?2]</Inverse>
+                 <Extraccion>
+                     <ObjectProperty>[?name]</ObjectProperty>
+                 </Extraccion>
+        </Restriccion>
 
 </Template>

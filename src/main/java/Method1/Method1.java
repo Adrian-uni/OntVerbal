@@ -39,7 +39,6 @@ public class Method1 {
         baseModel = infModel.getNsPrefixURI("").split("#")[0];
         //prefixModel = (baseModel.split("//")[1] + "#").toLowerCase();
         prefixModel = "";
-        System.out.println("base model es "  + baseModel);
         ExtendedIterator classes = infModel.listClasses();
         while (classes.hasNext()) {
 
@@ -284,7 +283,7 @@ public class Method1 {
             Element element = (Element) node;
             String nodeName = element.getNodeName();
             salida = salida + template.get(nodeName + "-Text");
-            System.out.println("Nodo " + nodeName);
+
             if( salida != null){
                 NodeList nodeList = element.getChildNodes();
                 for(int i = 0; i < nodeList.getLength() ; i++ ){
@@ -319,7 +318,7 @@ public class Method1 {
                             String replaceString = template.get(element.getNodeName() + "-Extraccion-" + childName);
                             String valueString = chidlNode.getAttributes().item(0).getTextContent().replaceAll(".*[#:]", "");
 
-                            if (replaceString != null && valueString != null) {
+                            if (replaceString != null && !replaceString.equals("none") && valueString != null) {
 
                                 if ( primero && replaceString.equals("[?name]") ) {
 
@@ -383,7 +382,6 @@ public class Method1 {
                     OntProperty p = infModel.getOntProperty(baseModel + "#" + lastProperty);
                     if( !nombre.equals("") ){
                         if ( p != null && p.getInverse() != null ){ //inversa de propiedad
-                            System.out.println(baseModel + "#" + nombre);
                             Individual ind1 = infModel.getIndividual(baseModel + "#" + nombre);
                             Individual ind2 = infModel.getIndividual(baseModel + "#" + ind1.getPropertyValue(p).toString().split("#")[1] );
 
@@ -451,7 +449,6 @@ public class Method1 {
                 String ent = XML_recursive(node, true );
                 if( salida != null && !ent.equals("") && elementos.get(ent) != null ) {
                     salida = salida.replaceAll("[A-Z]\\[\\?[a-zA-Z0-9]*\\]","");
-                    System.out.println("ent a sido: " + ent + "\n\n\n\n\n");
                     elementos.get(ent).setDescripcion(salida.replace("#", ""));
                 }
             }
@@ -540,11 +537,8 @@ public class Method1 {
 
         myWriter = new FileWriter("salida.txt");
 
-        System.out.println("Funcion 1");
         anyadirClases(); //añadimos entidades, individuos y propiedades
-        System.out.println("Funcion 1 acabado");
-        //infModel = borrarRecursosRDFS(infModel);
-        System.out.println("acaba esto 1");
+
         String fileName = "infModel_turtle.rdf";
         out = new FileWriter( fileName );
         try {
@@ -559,23 +553,20 @@ public class Method1 {
             }
         }
 
-        System.out.println("Funcion 2");
         anyadirInformacion();
 
-        System.out.println("Funcion 3");
         anyadirInformacionXML(fileXML);
 
-        System.out.println("Funcion 4");
         verbalizarModelo();
-        System.out.println("Funcion 5");
+
         myWriter.close();
 
         //Ejecutamos el script python
 
-        System.out.println("Idioma es: " + template.get("Language"));
+        System.out.println("Se verbalizará la ontología " + fileRDF + " al idioma " + template.get("Language"));
         String output = null;
         prefixModel = (baseModel.split("//")[1] + "#").toLowerCase();
-        ProcessBuilder processBuilder = new ProcessBuilder("python", "fileParser.py",template.get("Language"),  args[3], prefixModel, template.get("Regular") );
+        ProcessBuilder processBuilder = new ProcessBuilder("python", "pythonCode/fileParser.py",template.get("Language"),  args[3], prefixModel, template.get("Regular") );
         processBuilder.redirectErrorStream(true);
 
         Process process = processBuilder.start();
@@ -584,7 +575,6 @@ public class Method1 {
                 InputStreamReader(process.getInputStream()));
 
         // read the output from the command
-        System.out.println("Here is the standard output of the command:\n");
         while ((output = stdInput.readLine()) != null) {
             System.out.println(output);
         }

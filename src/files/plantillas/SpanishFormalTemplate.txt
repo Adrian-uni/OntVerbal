@@ -152,7 +152,7 @@
                 <Text> T[?content] T[?value]</Text>
                 <Extraccion>
                     <Content>[?content]</Content>
-                    <Literal>.._..</Literal>
+                    <Literal>none</Literal>
                 </Extraccion>
         </Restriccion>
 
@@ -184,7 +184,7 @@
                 <Extraccion>
                     <DataProperty>[?property]</DataProperty>
                     <NamedIndividual>[?name]</NamedIndividual>
-                    <Literal>.._..</Literal>
+                    <Literal>none</Literal>
                 </Extraccion>
         </Restriccion>
 
@@ -203,8 +203,8 @@
                  <Loop>#</Loop>
                  <Extraccion>
                      <AnnotationProperty>[?property]</AnnotationProperty>
-                     <IRI>.._..</IRI>
-                     <Literal>.._..</Literal>
+                     <IRI>none</IRI>
+                     <Literal>none</Literal>
                  </Extraccion>
         </Restriccion>
 

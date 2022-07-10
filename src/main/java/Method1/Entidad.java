@@ -62,7 +62,6 @@ public class Entidad extends Elemento {
         myWriter.write("T[" + elementoName +"]" + " : ");
 
         Iterator it = caracteristicas.keySet().iterator();
-        System.out.println("Verbalizacion: " + elementoName + "\n");
         while(it.hasNext()){
             String key = (String) it.next();
             String text = template.get(key+"-Text");
@@ -79,9 +78,7 @@ public class Entidad extends Elemento {
                     frase = frase + completarFrase( finish, null);
                 }
                 else if( i != 0 && loop != null){
-                    System.out.println("\t lo anterior es " + lista.get(0));
                     frase = completarFrase( loop, lista.get(i).split(" "));
-                    System.out.println("Ahora la frase es: " + frase);
                 }
                 else if( key == "Comentario" && text != null){
                     String[] v = new String[1];

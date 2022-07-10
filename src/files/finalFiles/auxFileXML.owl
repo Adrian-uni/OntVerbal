@@ -1,0 +1,3403 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://iasted_fr"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://iasted_fr">
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="iasted" IRI="http://iasted#"/>
+    <Prefix name="iasted_fr" IRI="http://iasted_fr#"/>
+    <Declaration>
+        <Class IRI="#c-0047049-0367963"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-0180426-9990719"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-0261654-8499644"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-0284967-8145363"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-0290487-6887828"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-0295689-5725013"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-0362042-3209760"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-0548882-6473323"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-0595617-6040889"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-0611448-2365413"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-0772044-6071505"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-0791905-5379642"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-0803024-0057902"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-0913969-4211965"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-1187343-0532699"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-1203110-3646755"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-1206207-9521087"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-1257856-7001715"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-1298943-4090251"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-1315633-2328137"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-1459958-9730539"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-1524438-2872109"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-1550787-7881655"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-1794515-4066237"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-1820362-0391824"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-1986249-1162309"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-1994330-2485086"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-2087685-2058603"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-2261486-5925197"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-2320289-4505171"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-2487600-4750835"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-2646256-3249810"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-2662748-0817179"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-2769037-4937022"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-2795422-0987768"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-2881157-7829017"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-2927028-1745950"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-2939529-9544181"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-2980661-9106781"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-2998926-8025065"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-3042660-7162476"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-3090612-7656564"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-3100969-2432672"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-3102550-2477414"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-3173460-1430156"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-3225783-0732169"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-3269141-6746139"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-3341947-6092469"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-3361805-0797682"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-3555081-7555269"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-3555465-6052891"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-3592059-2409670"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-3623194-3713078"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-3698022-6662722"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-3804061-8277905"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-3906447-3691960"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-3932878-7342900"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-4029152-2695341"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-4045071-5043786"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-4370801-0426010"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-4374849-8926470"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-4463960-7038391"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-4490912-4566524"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-4524499-9665981"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-4597178-7675384"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-4601129-9799116"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-4742537-6228595"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-4759044-7706694"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-4770107-2284576"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-4826161-8929869"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-4955246-0860231"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-4999862-4720192"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-5069063-8048839"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-5151240-5600223"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-5218688-2899234"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-5352653-8907096"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-5538863-9178083"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-5581998-5936719"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-5717634-7534620"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-5725126-1539739"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-5779890-8644133"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-5847190-5498193"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-5973500-9383288"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-6107704-9189440"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-6127539-2386991"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-6247307-3629426"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-6275655-8508050"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-6284042-6137032"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-6387312-6032704"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-6493255-2203711"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-6545671-4532209"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-6576643-9485380"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-6577784-9465035"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-6607590-6394993"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-6672805-9258673"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-6673711-3867567"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-6770385-5826203"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-6800278-1641341"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-6825335-9542878"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-6863829-2743221"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-6909300-6394915"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-7041425-7788285"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-7228313-0020468"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-7233445-8264658"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-7262127-1739733"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-7446694-8638795"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-7475109-7627187"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-7545265-1758012"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-7656366-4247560"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-7724806-2837359"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-7755720-4737926"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-7848255-8121844"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-7902640-7303520"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-7909005-9095109"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-7909417-3628726"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-7940552-6240385"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-8070797-2832388"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-8165583-3265102"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-8354376-0772641"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-8391085-7090023"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-8409291-0556065"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-8549275-2053115"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-8593720-5685756"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-8679616-2487440"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-8689257-0549094"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-8753832-9718220"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-8835333-6455364"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-9022031-1800687"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-9245772-9961311"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-9340416-5747801"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-9393214-0184120"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-9452078-7040519"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-9462784-2729114"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-9491444-7772192"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-9518215-0989021"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-9585109-2159078"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-9670012-9591617"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-9713438-5431590"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-9847623-8412643"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#c-9885865-2240529"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-0030754-5558313"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-0206543-7504445"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-0313040-1001176"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-0522612-7325569"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-1410040-6771887"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-1499245-4600419"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-1536763-8431821"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-1628206-0594563"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-1864476-9268210"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-2142377-5662357"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-2324004-3315334"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-2380138-2494494"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-2627938-7096672"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-2772714-6978421"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-2949151-3420526"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-3224977-6802601"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-3242475-9405929"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-3562986-8241380"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-3795418-4868612"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-4160673-7268306"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-4689538-1355186"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-5069456-1141693"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-5073161-7917559"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-5830377-4355172"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-5936609-7956818"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-6196483-3379968"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-6229890-1258016"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-6455536-6002248"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-6634130-3048554"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-6908948-8663913"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-6979937-7916442"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-7070909-3537965"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-8197531-4217948"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-8377117-4664902"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-8502713-4498335"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-9476732-5075803"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-9593649-0507589"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#op-9760493-4479889"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ent-6425375-5640253"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ent-7995576-1167082"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ent-9641747-5633047"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="iasted:Cancun"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="iasted:Chichen_Itza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="iasted:Mexico"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="iasted:peso"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#c-0261654-8499644"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-2772714-6978421"/>
+            <Class IRI="#c-5218688-2899234"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#c-0772044-6071505"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#op-3562986-8241380"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#c-1820362-0391824"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-8377117-4664902"/>
+            <Class IRI="#c-1206207-9521087"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#c-1994330-2485086"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-6908948-8663913"/>
+            <Class IRI="#c-0548882-6473323"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#c-2487600-4750835"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#op-6979937-7916442"/>
+                <Class IRI="#c-0595617-6040889"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#op-6979937-7916442"/>
+                <Class IRI="#c-1257856-7001715"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#op-8377117-4664902"/>
+                <Class IRI="#c-4463960-7038391"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#c-2881157-7829017"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-6908948-8663913"/>
+            <Class IRI="#c-5779890-8644133"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#c-2927028-1745950"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-6908948-8663913"/>
+            <Class IRI="#c-9670012-9591617"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#c-3555465-6052891"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-2772714-6978421"/>
+            <Class IRI="#c-6275655-8508050"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#c-3906447-3691960"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-2772714-6978421"/>
+            <Class IRI="#c-6863829-2743221"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#c-5538863-9178083"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-2772714-6978421"/>
+            <Class IRI="#c-6672805-9258673"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#c-5779890-8644133"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-9593649-0507589"/>
+            <Class IRI="#c-2927028-1745950"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#c-6127539-2386991"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-7070909-3537965"/>
+            <Class IRI="#c-8753832-9718220"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#c-6387312-6032704"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-6908948-8663913"/>
+            <Class IRI="#c-2795422-0987768"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#c-8753832-9718220"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-6908948-8663913"/>
+            <Class IRI="#c-6127539-2386991"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#c-8835333-6455364"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-8377117-4664902"/>
+            <Class IRI="#c-2646256-3249810"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#c-9670012-9591617"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-9593649-0507589"/>
+            <Class IRI="#c-2881157-7829017"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#c-0180426-9990719"/>
+        <Class IRI="#c-7656366-4247560"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0261654-8499644"/>
+        <Class IRI="#c-2487600-4750835"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0284967-8145363"/>
+        <Class IRI="#c-1986249-1162309"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0290487-6887828"/>
+        <Class IRI="#c-0913969-4211965"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0290487-6887828"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <ObjectComplementOf>
+                <Class IRI="#c-0772044-6071505"/>
+            </ObjectComplementOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0295689-5725013"/>
+        <Class IRI="#c-1794515-4066237"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0362042-3209760"/>
+        <Class IRI="#c-2998926-8025065"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0548882-6473323"/>
+        <Class IRI="#c-9022031-1800687"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0548882-6473323"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-9476732-5075803"/>
+            <Class IRI="#c-3932878-7342900"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0548882-6473323"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-9593649-0507589"/>
+            <ObjectUnionOf>
+                <Class IRI="#c-3698022-6662722"/>
+                <Class IRI="#c-8835333-6455364"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0595617-6040889"/>
+        <Class IRI="#c-7909005-9095109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0595617-6040889"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5830377-4355172"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0595617-6040889"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-5151240-5600223"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0595617-6040889"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-9585109-2159078"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0611448-2365413"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0611448-2365413"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-5151240-5600223"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0611448-2365413"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-9585109-2159078"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0772044-6071505"/>
+        <Class IRI="#c-2487600-4750835"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0791905-5379642"/>
+        <Class IRI="#c-7446694-8638795"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0803024-0057902"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0803024-0057902"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-3242475-9405929"/>
+            <Class IRI="#c-7262127-1739733"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0913969-4211965"/>
+        <Class IRI="#c-6577784-9465035"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-0913969-4211965"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1187343-0532699"/>
+        <Class IRI="#c-0611448-2365413"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1187343-0532699"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-0595617-6040889"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1203110-3646755"/>
+        <Class IRI="#c-6577784-9465035"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1203110-3646755"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1206207-9521087"/>
+        <Class IRI="#c-2769037-4937022"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1206207-9521087"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1206207-9521087"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-9476732-5075803"/>
+            <Class IRI="#c-3555081-7555269"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1206207-9521087"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-9476732-5075803"/>
+            <Class IRI="#c-6576643-9485380"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1257856-7001715"/>
+        <Class IRI="#c-0047049-0367963"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1257856-7001715"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1298943-4090251"/>
+        <Class IRI="#c-5717634-7534620"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1298943-4090251"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-2627938-7096672"/>
+            <Class IRI="#c-1206207-9521087"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1298943-4090251"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-7070909-3537965"/>
+            <Class IRI="#c-1820362-0391824"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1315633-2328137"/>
+        <Class IRI="#c-1257856-7001715"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1459958-9730539"/>
+        <Class IRI="#c-9245772-9961311"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1459958-9730539"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-2627938-7096672"/>
+            <Class IRI="#c-8391085-7090023"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1524438-2872109"/>
+        <Class IRI="#c-4826161-8929869"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1550787-7881655"/>
+        <Class IRI="#c-4370801-0426010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1550787-7881655"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <ObjectUnionOf>
+                <Class IRI="#c-4742537-6228595"/>
+                <Class IRI="#c-5717634-7534620"/>
+                <Class IRI="#c-6127539-2386991"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1794515-4066237"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1794515-4066237"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-2949151-3420526"/>
+            <Class IRI="#c-4601129-9799116"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1794515-4066237"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <Class IRI="#c-2320289-4505171"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1794515-4066237"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-3932878-7342900"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1820362-0391824"/>
+        <Class IRI="#c-2487600-4750835"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1986249-1162309"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1986249-1162309"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-2949151-3420526"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1994330-2485086"/>
+        <Class IRI="#c-3698022-6662722"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-1994330-2485086"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-4689538-1355186"/>
+            <Class IRI="#c-3932878-7342900"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2087685-2058603"/>
+        <Class IRI="#c-7940552-6240385"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2320289-4505171"/>
+        <Class IRI="#c-2487600-4750835"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2320289-4505171"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-4160673-7268306"/>
+            <Class IRI="#c-5973500-9383288"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2320289-4505171"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-6979937-7916442"/>
+            <ObjectUnionOf>
+                <Class IRI="#c-1187343-0532699"/>
+                <Class IRI="#c-3932878-7342900"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2487600-4750835"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2487600-4750835"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-1864476-9268210"/>
+            <Class IRI="#c-6673711-3867567"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2487600-4750835"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-1864476-9268210"/>
+            <Class IRI="#c-8409291-0556065"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2487600-4750835"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-1864476-9268210"/>
+            <Class IRI="#c-9393214-0184120"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2487600-4750835"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-2772714-6978421"/>
+            <Class IRI="#c-9245772-9961311"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2487600-4750835"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-6455536-6002248"/>
+            <Class IRI="#c-3269141-6746139"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2487600-4750835"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-8502713-4498335"/>
+            <Class IRI="#c-4759044-7706694"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2487600-4750835"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-9760493-4479889"/>
+            <Class IRI="#c-3804061-8277905"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2646256-3249810"/>
+        <Class IRI="#c-5581998-5936719"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2662748-0817179"/>
+        <Class IRI="#c-3698022-6662722"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2662748-0817179"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-9760493-4479889"/>
+            <Class IRI="#c-8391085-7090023"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2769037-4937022"/>
+        <Class IRI="#c-7233445-8264658"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2769037-4937022"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-2380138-2494494"/>
+            <Class IRI="#c-1257856-7001715"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2795422-0987768"/>
+        <Class IRI="#c-4029152-2695341"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2795422-0987768"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-2324004-3315334"/>
+            <Class IRI="#c-6387312-6032704"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2881157-7829017"/>
+        <Class IRI="#c-3698022-6662722"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2881157-7829017"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-4689538-1355186"/>
+            <Class IRI="#c-1187343-0532699"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2927028-1745950"/>
+        <Class IRI="#c-3698022-6662722"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2927028-1745950"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-4689538-1355186"/>
+            <Class IRI="#c-1187343-0532699"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2939529-9544181"/>
+        <Class IRI="#c-4029152-2695341"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2939529-9544181"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-6229890-1258016"/>
+            <Class IRI="#c-4601129-9799116"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2980661-9106781"/>
+        <Class IRI="#c-5717634-7534620"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2980661-9106781"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-7070909-3537965"/>
+            <Class IRI="#c-3361805-0797682"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-2998926-8025065"/>
+        <Class IRI="#c-7656366-4247560"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3042660-7162476"/>
+        <Class IRI="#c-7656366-4247560"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3090612-7656564"/>
+        <Class IRI="#c-0803024-0057902"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3100969-2432672"/>
+        <Class IRI="#c-7940552-6240385"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3173460-1430156"/>
+        <Class IRI="#c-3698022-6662722"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3173460-1430156"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-9760493-4479889"/>
+            <Class IRI="#c-3090612-7656564"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3225783-0732169"/>
+        <Class IRI="#c-7446694-8638795"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3269141-6746139"/>
+        <Class IRI="#c-4029152-2695341"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3269141-6746139"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-2142377-5662357"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3341947-6092469"/>
+        <Class IRI="#c-0548882-6473323"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3361805-0797682"/>
+        <Class IRI="#c-2487600-4750835"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3361805-0797682"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#op-1864476-9268210"/>
+                <Class IRI="#c-6284042-6137032"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#op-2772714-6978421"/>
+                <Class IRI="#c-2980661-9106781"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3555081-7555269"/>
+        <Class IRI="#c-6607590-6394993"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3555081-7555269"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-3224977-6802601"/>
+            <Class IRI="#c-1820362-0391824"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3555465-6052891"/>
+        <Class IRI="#c-3592059-2409670"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3592059-2409670"/>
+        <Class IRI="#c-2487600-4750835"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3623194-3713078"/>
+        <Class IRI="#c-8354376-0772641"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3623194-3713078"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-0522612-7325569"/>
+            <Class IRI="#c-0791905-5379642"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3698022-6662722"/>
+        <Class IRI="#c-4601129-9799116"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3698022-6662722"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-1499245-4600419"/>
+            <Class IRI="#c-2939529-9544181"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3698022-6662722"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-6908948-8663913"/>
+            <Class IRI="#c-8165583-3265102"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3804061-8277905"/>
+        <Class IRI="#c-4029152-2695341"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3804061-8277905"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3906447-3691960"/>
+        <Class IRI="#c-3592059-2409670"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3932878-7342900"/>
+        <Class IRI="#c-0611448-2365413"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3932878-7342900"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-1410040-6771887"/>
+            <Class IRI="#c-1794515-4066237"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-3932878-7342900"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-0595617-6040889"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4029152-2695341"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4045071-5043786"/>
+        <Class IRI="#c-6607590-6394993"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4045071-5043786"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5830377-4355172"/>
+            <Class IRI="#c-8753832-9718220"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4370801-0426010"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4374849-8926470"/>
+        <Class IRI="#c-6577784-9465035"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4374849-8926470"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4463960-7038391"/>
+        <Class IRI="#c-6577784-9465035"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4463960-7038391"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4490912-4566524"/>
+        <Class IRI="#c-9491444-7772192"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4490912-4566524"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-8377117-4664902"/>
+            <Class IRI="#c-0180426-9990719"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4524499-9665981"/>
+        <Class IRI="#c-4742537-6228595"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4524499-9665981"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <Class IRI="#c-8689257-0549094"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4597178-7675384"/>
+        <Class IRI="#c-7446694-8638795"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4601129-9799116"/>
+        <Class IRI="#c-2487600-4750835"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4601129-9799116"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-6196483-3379968"/>
+            <Class IRI="#c-7262127-1739733"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4601129-9799116"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-6908948-8663913"/>
+            <Class IRI="#c-9022031-1800687"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4742537-6228595"/>
+        <Class IRI="#c-2261486-5925197"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4759044-7706694"/>
+        <Class IRI="#c-8354376-0772641"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4759044-7706694"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-1628206-0594563"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4759044-7706694"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-3795418-4868612"/>
+            <Class IRI="#c-4597178-7675384"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4770107-2284576"/>
+        <Class IRI="#c-2261486-5925197"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4770107-2284576"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-0030754-5558313"/>
+            <Class IRI="#c-6493255-2203711"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4826161-8929869"/>
+        <Class IRI="#c-0611448-2365413"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4826161-8929869"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <Class IRI="#c-3361805-0797682"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4826161-8929869"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-6284042-6137032"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4955246-0860231"/>
+        <Class IRI="#c-4029152-2695341"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4955246-0860231"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4999862-4720192"/>
+        <Class IRI="#c-6577784-9465035"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-4999862-4720192"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-9593649-0507589"/>
+            <Class IRI="#c-9518215-0989021"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-5069063-8048839"/>
+        <Class IRI="#c-1986249-1162309"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-5151240-5600223"/>
+        <Class IRI="#c-7475109-7627187"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-5151240-5600223"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-3224977-6802601"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-5218688-2899234"/>
+        <Class IRI="#c-9245772-9961311"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-5218688-2899234"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <Class IRI="#c-0261654-8499644"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-5352653-8907096"/>
+        <Class IRI="#c-7656366-4247560"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-5352653-8907096"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5073161-7917559"/>
+            <Class IRI="#c-9713438-5431590"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-5538863-9178083"/>
+        <Class IRI="#c-2487600-4750835"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-5581998-5936719"/>
+        <Class IRI="#c-6577784-9465035"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-5717634-7534620"/>
+        <Class IRI="#c-2261486-5925197"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-5717634-7534620"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-6634130-3048554"/>
+            <ObjectUnionOf>
+                <Class IRI="#c-1550787-7881655"/>
+                <Class IRI="#c-9340416-5747801"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-5725126-1539739"/>
+        <Class IRI="#c-7446694-8638795"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-5779890-8644133"/>
+        <Class IRI="#c-9022031-1800687"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-5847190-5498193"/>
+        <Class IRI="#c-7475109-7627187"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-5973500-9383288"/>
+        <Class IRI="#c-4029152-2695341"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-5973500-9383288"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-1536763-8431821"/>
+            <Class IRI="#c-2320289-4505171"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-5973500-9383288"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-3932878-7342900"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6107704-9189440"/>
+        <Class IRI="#c-1994330-2485086"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6127539-2386991"/>
+        <Class IRI="#c-2261486-5925197"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6247307-3629426"/>
+        <Class IRI="#c-4742537-6228595"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6275655-8508050"/>
+        <Class IRI="#c-9245772-9961311"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6275655-8508050"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <ObjectUnionOf>
+                <Class IRI="#c-3555465-6052891"/>
+                <Class IRI="#c-6107704-9189440"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6284042-6137032"/>
+        <Class IRI="#c-7909005-9095109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6284042-6137032"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <Class IRI="#c-3361805-0797682"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6284042-6137032"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-5151240-5600223"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6284042-6137032"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-9585109-2159078"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6387312-6032704"/>
+        <Class IRI="#c-4601129-9799116"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6493255-2203711"/>
+        <Class IRI="#c-7909005-9095109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6493255-2203711"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5830377-4355172"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6493255-2203711"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-5151240-5600223"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6493255-2203711"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-9585109-2159078"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6545671-4532209"/>
+        <Class IRI="#c-9340416-5747801"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6576643-9485380"/>
+        <Class IRI="#c-0047049-0367963"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6576643-9485380"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6577784-9465035"/>
+        <Class IRI="#c-7233445-8264658"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6577784-9465035"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-9476732-5075803"/>
+            <Class IRI="#c-1257856-7001715"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6577784-9465035"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-9476732-5075803"/>
+            <Class IRI="#c-5151240-5600223"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6607590-6394993"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6607590-6394993"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-7475109-7627187"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6672805-9258673"/>
+        <Class IRI="#c-9245772-9961311"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6672805-9258673"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <Class IRI="#c-5538863-9178083"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6673711-3867567"/>
+        <Class IRI="#c-7475109-7627187"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6673711-3867567"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5830377-4355172"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6770385-5826203"/>
+        <Class IRI="#c-7446694-8638795"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6800278-1641341"/>
+        <Class IRI="#c-1794515-4066237"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6825335-9542878"/>
+        <Class IRI="#c-2998926-8025065"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6863829-2743221"/>
+        <Class IRI="#c-9245772-9961311"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-6863829-2743221"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <Class IRI="#c-3592059-2409670"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-7041425-7788285"/>
+        <Class IRI="#c-8354376-0772641"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-7041425-7788285"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-3795418-4868612"/>
+            <Class IRI="#c-3225783-0732169"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-7228313-0020468"/>
+        <Class IRI="#c-4826161-8929869"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-7262127-1739733"/>
+        <Class IRI="#c-9491444-7772192"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-7262127-1739733"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-8377117-4664902"/>
+            <Class IRI="#c-3042660-7162476"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-7446694-8638795"/>
+        <Class IRI="#c-0047049-0367963"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-7446694-8638795"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-7545265-1758012"/>
+        <Class IRI="#c-1994330-2485086"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-7656366-4247560"/>
+        <Class IRI="#c-7233445-8264658"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-7656366-4247560"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-8197531-4217948"/>
+            <Class IRI="#c-1257856-7001715"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-7755720-4737926"/>
+        <Class IRI="#c-1794515-4066237"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-7848255-8121844"/>
+        <Class IRI="#c-9340416-5747801"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-7902640-7303520"/>
+        <Class IRI="#c-0611448-2365413"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-7909005-9095109"/>
+        <Class IRI="#c-0611448-2365413"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-7909417-3628726"/>
+        <Class IRI="#c-1794515-4066237"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-7940552-6240385"/>
+        <Class IRI="#c-6577784-9465035"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8070797-2832388"/>
+        <Class IRI="#c-1986249-1162309"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8165583-3265102"/>
+        <Class IRI="#c-4029152-2695341"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8165583-3265102"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-0313040-1001176"/>
+            <Class IRI="#c-8835333-6455364"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8165583-3265102"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-9593649-0507589"/>
+            <Class IRI="#c-3698022-6662722"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8354376-0772641"/>
+        <Class IRI="#c-4029152-2695341"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8354376-0772641"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-0313040-1001176"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8391085-7090023"/>
+        <Class IRI="#c-0803024-0057902"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8409291-0556065"/>
+        <Class IRI="#c-6607590-6394993"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8409291-0556065"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5830377-4355172"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8593720-5685756"/>
+        <Class IRI="#c-7909005-9095109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8593720-5685756"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-6673711-3867567"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8593720-5685756"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-8409291-0556065"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8679616-2487440"/>
+        <Class IRI="#c-7656366-4247560"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8689257-0549094"/>
+        <Class IRI="#c-2769037-4937022"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8753832-9718220"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8753832-9718220"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-1864476-9268210"/>
+            <Class IRI="#c-4045071-5043786"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8753832-9718220"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-1864476-9268210"/>
+            <Class IRI="#c-5847190-5498193"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8753832-9718220"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-1864476-9268210"/>
+            <Class IRI="#c-9885865-2240529"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8835333-6455364"/>
+        <Class IRI="#c-2487600-4750835"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-8835333-6455364"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-9760493-4479889"/>
+            <Class IRI="#c-8165583-3265102"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9022031-1800687"/>
+        <Class IRI="#c-6577784-9465035"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9022031-1800687"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <Class IRI="#c-2320289-4505171"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9245772-9961311"/>
+        <Class IRI="#c-5717634-7534620"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9245772-9961311"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-2627938-7096672"/>
+            <Class IRI="#c-6577784-9465035"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9245772-9961311"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-7070909-3537965"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9340416-5747801"/>
+        <Class IRI="#c-4029152-2695341"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9340416-5747801"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5069456-1141693"/>
+            <ObjectUnionOf>
+                <Class IRI="#c-4742537-6228595"/>
+                <Class IRI="#c-5717634-7534620"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9393214-0184120"/>
+        <Class IRI="#c-7909005-9095109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9393214-0184120"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5830377-4355172"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9393214-0184120"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-6673711-3867567"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9393214-0184120"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-8409291-0556065"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9452078-7040519"/>
+        <Class IRI="#c-6577784-9465035"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9462784-2729114"/>
+        <Class IRI="#c-7909005-9095109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9462784-2729114"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-5151240-5600223"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9462784-2729114"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-9585109-2159078"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9491444-7772192"/>
+        <Class IRI="#c-4029152-2695341"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9491444-7772192"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-2324004-3315334"/>
+            <Class IRI="#c-4601129-9799116"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9518215-0989021"/>
+        <Class IRI="#c-2487600-4750835"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9518215-0989021"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-8377117-4664902"/>
+            <Class IRI="#c-4999862-4720192"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9585109-2159078"/>
+        <Class IRI="#c-6607590-6394993"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9585109-2159078"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-3224977-6802601"/>
+            <Class IRI="#c-2487600-4750835"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9670012-9591617"/>
+        <Class IRI="#c-9022031-1800687"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9713438-5431590"/>
+        <Class IRI="#c-1986249-1162309"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9847623-8412643"/>
+        <Class IRI="#c-9245772-9961311"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9847623-8412643"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-2627938-7096672"/>
+            <Class IRI="#c-3090612-7656564"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9885865-2240529"/>
+        <Class IRI="#c-7909005-9095109"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9885865-2240529"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5830377-4355172"/>
+            <Class IRI="#c-8753832-9718220"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9885865-2240529"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-4045071-5043786"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#c-9885865-2240529"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#op-5936609-7956818"/>
+            <Class IRI="#c-5847190-5498193"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#c-3592059-2409670"/>
+        <Class IRI="#c-4601129-9799116"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#c-9585109-2159078"/>
+        <NamedIndividual abbreviatedIRI="iasted:Cancun"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#c-3555081-7555269"/>
+        <NamedIndividual abbreviatedIRI="iasted:Chichen_Itza"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#c-5151240-5600223"/>
+        <NamedIndividual abbreviatedIRI="iasted:Mexico"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#c-3102550-2477414"/>
+        <NamedIndividual abbreviatedIRI="iasted:peso"/>
+    </ClassAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#op-1499245-4600419"/>
+        <ObjectProperty IRI="#op-6229890-1258016"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#op-1536763-8431821"/>
+        <ObjectProperty IRI="#op-4160673-7268306"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#op-1628206-0594563"/>
+        <ObjectProperty IRI="#op-8502713-4498335"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#op-1864476-9268210"/>
+        <ObjectProperty IRI="#op-5830377-4355172"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#op-2142377-5662357"/>
+        <ObjectProperty IRI="#op-6455536-6002248"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#op-2324004-3315334"/>
+        <ObjectProperty IRI="#op-6196483-3379968"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#op-2772714-6978421"/>
+        <ObjectProperty IRI="#op-7070909-3537965"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#op-6908948-8663913"/>
+        <ObjectProperty IRI="#op-9593649-0507589"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-0030754-5558313"/>
+        <Class IRI="#c-2261486-5925197"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-0206543-7504445"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-0313040-1001176"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-0522612-7325569"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-1410040-6771887"/>
+        <Class IRI="#c-0611448-2365413"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-1499245-4600419"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-1536763-8431821"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-1628206-0594563"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-1864476-9268210"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-2142377-5662357"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-2324004-3315334"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-2380138-2494494"/>
+        <Class IRI="#c-7233445-8264658"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-2627938-7096672"/>
+        <Class IRI="#c-2261486-5925197"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-2772714-6978421"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-2949151-3420526"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-3224977-6802601"/>
+        <ObjectUnionOf>
+            <Class IRI="#c-6607590-6394993"/>
+            <Class IRI="#c-7475109-7627187"/>
+            <Class IRI="#c-7909005-9095109"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-3242475-9405929"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-3562986-8241380"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-3795418-4868612"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-4160673-7268306"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-4689538-1355186"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-5069456-1141693"/>
+        <ObjectUnionOf>
+            <Class IRI="#c-0047049-0367963"/>
+            <Class IRI="#c-2261486-5925197"/>
+            <Class IRI="#c-7233445-8264658"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-5073161-7917559"/>
+        <ObjectUnionOf>
+            <Class IRI="#c-7233445-8264658"/>
+            <Class IRI="#c-8549275-2053115"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-5830377-4355172"/>
+        <ObjectUnionOf>
+            <Class IRI="#c-6607590-6394993"/>
+            <Class IRI="#c-7475109-7627187"/>
+            <Class IRI="#c-7909005-9095109"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-5936609-7956818"/>
+        <ObjectUnionOf>
+            <Class IRI="#c-0611448-2365413"/>
+            <Class IRI="#c-6607590-6394993"/>
+            <Class IRI="#c-7909005-9095109"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-6196483-3379968"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-6229890-1258016"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-6455536-6002248"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-6634130-3048554"/>
+        <Class IRI="#c-2261486-5925197"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-6908948-8663913"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-6979937-7916442"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-7070909-3537965"/>
+        <Class IRI="#c-2261486-5925197"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-8197531-4217948"/>
+        <Class IRI="#c-7233445-8264658"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-8377117-4664902"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-8502713-4498335"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-9476732-5075803"/>
+        <Class IRI="#c-7233445-8264658"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-9593649-0507589"/>
+        <ObjectUnionOf>
+            <Class IRI="#c-6909300-6394915"/>
+            <Class IRI="#c-7233445-8264658"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#op-9760493-4479889"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-0030754-5558313"/>
+        <Class IRI="#c-7909005-9095109"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-0206543-7504445"/>
+        <ObjectUnionOf>
+            <Class IRI="#c-2261486-5925197"/>
+            <Class IRI="#c-7233445-8264658"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-0313040-1001176"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-0522612-7325569"/>
+        <Class IRI="#c-0047049-0367963"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-1410040-6771887"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-1499245-4600419"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-1536763-8431821"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-1628206-0594563"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-1864476-9268210"/>
+        <ObjectUnionOf>
+            <Class IRI="#c-6607590-6394993"/>
+            <Class IRI="#c-7475109-7627187"/>
+            <Class IRI="#c-7909005-9095109"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-2142377-5662357"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-2324004-3315334"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-2380138-2494494"/>
+        <Class IRI="#c-0047049-0367963"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-2627938-7096672"/>
+        <ObjectUnionOf>
+            <Class IRI="#c-6909300-6394915"/>
+            <Class IRI="#c-7233445-8264658"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-2772714-6978421"/>
+        <Class IRI="#c-2261486-5925197"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-2949151-3420526"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-3224977-6802601"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-3242475-9405929"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-3562986-8241380"/>
+        <Class IRI="#c-0047049-0367963"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-3795418-4868612"/>
+        <Class IRI="#c-0047049-0367963"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-4160673-7268306"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-4689538-1355186"/>
+        <ObjectUnionOf>
+            <Class IRI="#c-0047049-0367963"/>
+            <Class IRI="#c-0611448-2365413"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-5069456-1141693"/>
+        <ObjectUnionOf>
+            <Class IRI="#c-7233445-8264658"/>
+            <Class IRI="#c-8549275-2053115"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-5073161-7917559"/>
+        <ObjectUnionOf>
+            <Class IRI="#c-0611448-2365413"/>
+            <Class IRI="#c-6909300-6394915"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-5830377-4355172"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-5936609-7956818"/>
+        <ObjectUnionOf>
+            <Class IRI="#c-0611448-2365413"/>
+            <Class IRI="#c-6607590-6394993"/>
+            <Class IRI="#c-7475109-7627187"/>
+            <Class IRI="#c-7909005-9095109"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-6196483-3379968"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-6229890-1258016"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-6455536-6002248"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-6634130-3048554"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-6908948-8663913"/>
+        <ObjectUnionOf>
+            <Class IRI="#c-6909300-6394915"/>
+            <Class IRI="#c-7233445-8264658"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-6979937-7916442"/>
+        <ObjectUnionOf>
+            <Class IRI="#c-0047049-0367963"/>
+            <Class IRI="#c-0611448-2365413"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-7070909-3537965"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-8197531-4217948"/>
+        <Class IRI="#c-0047049-0367963"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-8377117-4664902"/>
+        <Class IRI="#c-7233445-8264658"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-8502713-4498335"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-9476732-5075803"/>
+        <ObjectUnionOf>
+            <Class IRI="#c-0047049-0367963"/>
+            <Class IRI="#c-0611448-2365413"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-9593649-0507589"/>
+        <Class IRI="#c-8549275-2053115"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#op-9760493-4479889"/>
+        <Class IRI="#c-6909300-6394915"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ent-6425375-5640253"/>
+        <Class IRI="#c-7233445-8264658"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ent-7995576-1167082"/>
+        <Class IRI="#c-2261486-5925197"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ent-9641747-5633047"/>
+        <Class IRI="#c-7446694-8638795"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#ent-6425375-5640253"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ent-7995576-1167082"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ent-9641747-5633047"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-0047049-0367963</IRI>
+        <Literal xml:lang="fr">Temps</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-0180426-9990719</IRI>
+        <Literal xml:lang="fr">Refus de manuscrit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-0261654-8499644</IRI>
+        <Literal xml:lang="fr">Non membre d&apos;IASTED</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-0284967-8145363</IRI>
+        <Literal xml:lang="fr">Minibus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-0290487-6887828</IRI>
+        <Literal xml:lang="fr">D�ner de gala</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-0295689-5725013</IRI>
+        <Literal xml:lang="fr">Lecteur de cassettes vid�o</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-0362042-3209760</IRI>
+        <Literal xml:lang="fr">Simulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-0548882-6473323</IRI>
+        <Literal xml:lang="fr">Session</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-0595617-6040889</IRI>
+        <Literal xml:lang="fr">B�timent de conf�rence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-0611448-2365413</IRI>
+        <Literal xml:lang="fr">Lieu</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-0772044-6071505</IRI>
+        <Literal xml:lang="fr">Orateur pendant une journ�e</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-0791905-5379642</IRI>
+        <Literal xml:lang="fr">Date limite de notification d&apos;acceptation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-0803024-0057902</IRI>
+        <Literal xml:lang="fr">Publication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-0913969-4211965</IRI>
+        <Literal xml:lang="fr">Programme social</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-1187343-0532699</IRI>
+        <Literal xml:lang="fr">Salle de conf�rence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-1203110-3646755</IRI>
+        <Literal xml:lang="fr">Pause caf�</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-1206207-9521087</IRI>
+        <Literal xml:lang="fr">Visite guid�e d&apos;une journ�e compl�te</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-1257856-7001715</IRI>
+        <Literal xml:lang="fr">Jour de conf�rence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-1298943-4090251</IRI>
+        <Literal xml:lang="fr">Frais de voyage suppl�mentaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-1315633-2328137</IRI>
+        <Literal xml:lang="fr">Conf�rence d&apos;une journ�e</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-1459958-9730539</IRI>
+        <Literal xml:lang="fr">Frais d&apos;inscription d&apos;auteur participant pour les actes sur support num�rique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-1524438-2872109</IRI>
+        <Literal xml:lang="fr">Chambre d&apos;h�tel simple</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-1550787-7881655</IRI>
+        <Literal xml:lang="fr">Carte de cr�dit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-1794515-4066237</IRI>
+        <Literal xml:lang="fr">�quipement audiovisuel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-1820362-0391824</IRI>
+        <Literal xml:lang="fr">Guide d&apos;excursion de conf�rence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-1986249-1162309</IRI>
+        <Literal xml:lang="fr">V�hicule de transport</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-1994330-2485086</IRI>
+        <Literal xml:lang="fr">Pr�sentateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-2087685-2058603</IRI>
+        <Literal xml:lang="fr">Pr�sentation power point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-2261486-5925197</IRI>
+        <Literal xml:lang="fr">Argent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-2320289-4505171</IRI>
+        <Literal xml:lang="fr">Auditeur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-2487600-4750835</IRI>
+        <Literal xml:lang="fr">Repr�sentant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-2646256-3249810</IRI>
+        <Literal xml:lang="fr">Introduction d&apos;un orateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-2662748-0817179</IRI>
+        <Literal xml:lang="fr">Auteur ayant les actes sur support num�rique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-2769037-4937022</IRI>
+        <Literal xml:lang="fr">Activit� ayant lieu apr�s une conf�rence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-2795422-0987768</IRI>
+        <Literal xml:lang="fr">Rapport d&apos;examen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-2881157-7829017</IRI>
+        <Literal xml:lang="fr">Orateur d&apos;un tutoriel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-2927028-1745950</IRI>
+        <Literal xml:lang="fr">Orateur de conf�rence pl�ni�re</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-2939529-9544181</IRI>
+        <Literal xml:lang="fr">Transparent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-2980661-9106781</IRI>
+        <Literal xml:lang="fr">Frais d&apos;h�tel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-2998926-8025065</IRI>
+        <Literal xml:lang="fr">Recherche</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-3042660-7162476</IRI>
+        <Literal xml:lang="fr">Acceptation de manuscrit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-3090612-7656564</IRI>
+        <Literal xml:lang="fr">Actes en format papier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-3100969-2432672</IRI>
+        <Literal xml:lang="fr">Pr�sentation vid�o</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-3102550-2477414</IRI>
+        <Literal xml:lang="fr">Monnaie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-3173460-1430156</IRI>
+        <Literal xml:lang="fr">Auteur ayant les actes au format papier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-3225783-0732169</IRI>
+        <Literal xml:lang="fr">Date limite de r�servation d&apos;h�tel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-3269141-6746139</IRI>
+        <Literal xml:lang="fr">Visa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-3341947-6092469</IRI>
+        <Literal xml:lang="fr">Pr�sentation d&apos;orateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-3361805-0797682</IRI>
+        <Literal xml:lang="fr">Ma�tre d&apos;h�tel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-3555081-7555269</IRI>
+        <Literal xml:lang="fr">Ville d&apos;excursion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-3555465-6052891</IRI>
+        <Literal xml:lang="fr">�tudiant non orateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-3592059-2409670</IRI>
+        <Literal xml:lang="fr">Non orateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-3623194-3713078</IRI>
+        <Literal xml:lang="fr">Formulaire d&apos;information sur un auteur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-3698022-6662722</IRI>
+        <Literal xml:lang="fr">Auteur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-3804061-8277905</IRI>
+        <Literal xml:lang="fr">Lettre d&apos;invitation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-3906447-3691960</IRI>
+        <Literal xml:lang="fr">Travailleur non orateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-3932878-7342900</IRI>
+        <Literal xml:lang="fr">Salle de session</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-4029152-2695341</IRI>
+        <Literal xml:lang="fr">Document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-4045071-5043786</IRI>
+        <Literal xml:lang="fr">Ville de sponsor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-4370801-0426010</IRI>
+        <Literal xml:lang="fr">Carte</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-4374849-8926470</IRI>
+        <Literal xml:lang="fr">Cocktail de r�ception</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-4463960-7038391</IRI>
+        <Literal xml:lang="fr">Inscription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-4490912-4566524</IRI>
+        <Literal xml:lang="fr">Manuscrit initial</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-4524499-9665981</IRI>
+        <Literal xml:lang="fr">Taxe de d�part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-4597178-7675384</IRI>
+        <Literal xml:lang="fr">Date limite d&apos;inscription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-4601129-9799116</IRI>
+        <Literal xml:lang="fr">Orateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-4742537-6228595</IRI>
+        <Literal xml:lang="fr">Taxe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-4759044-7706694</IRI>
+        <Literal xml:lang="fr">Formulaire d&apos;inscription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-4770107-2284576</IRI>
+        <Literal xml:lang="fr">Pourboire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-4826161-8929869</IRI>
+        <Literal xml:lang="fr">Chambre d&apos;h�tel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-4955246-0860231</IRI>
+        <Literal xml:lang="fr">Liste de diffusion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-4999862-4720192</IRI>
+        <Literal xml:lang="fr">Activit� technique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-5069063-8048839</IRI>
+        <Literal xml:lang="fr">Taxi</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-5151240-5600223</IRI>
+        <Literal xml:lang="fr">�tat d&apos;une conf�rence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-5218688-2899234</IRI>
+        <Literal xml:lang="fr">Frais d&apos;inscription de non membre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-5352653-8907096</IRI>
+        <Literal xml:lang="fr">Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-5538863-9178083</IRI>
+        <Literal xml:lang="fr">Membre d&apos;IASTED</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-5581998-5936719</IRI>
+        <Literal xml:lang="fr">Introduction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-5717634-7534620</IRI>
+        <Literal xml:lang="fr">Frais</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-5725126-1539739</IRI>
+        <Literal xml:lang="fr">Date limite de d�p�t de version finale de manuscrit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-5779890-8644133</IRI>
+        <Literal xml:lang="fr">Conf�rence pl�ni�re</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-5847190-5498193</IRI>
+        <Literal xml:lang="fr">�tat d&apos;un sponsor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-5973500-9383288</IRI>
+        <Literal xml:lang="fr">Registre de participation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-6107704-9189440</IRI>
+        <Literal xml:lang="fr">Pr�sentateur �tudiant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-6127539-2386991</IRI>
+        <Literal xml:lang="fr">Sponsorisation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-6247307-3629426</IRI>
+        <Literal xml:lang="fr">Taxe sur la valeur ajout�e</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-6275655-8508050</IRI>
+        <Literal xml:lang="fr">Frais d&apos;inscription d&apos;�tudiant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-6284042-6137032</IRI>
+        <Literal xml:lang="fr">H�tel d&apos;une conf�rence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-6387312-6032704</IRI>
+        <Literal xml:lang="fr">Relecteur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-6493255-2203711</IRI>
+        <Literal xml:lang="fr">Restaurant d&apos;une conf�rence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-6545671-4532209</IRI>
+        <Literal xml:lang="fr">Ch�que</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-6576643-9485380</IRI>
+        <Literal xml:lang="fr">Jour de voyage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-6577784-9465035</IRI>
+        <Literal xml:lang="fr">Activit� ayant lieu pendant une conf�rence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-6607590-6394993</IRI>
+        <Literal xml:lang="fr">Ville</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-6672805-9258673</IRI>
+        <Literal xml:lang="fr">Frais d&apos;inscription de membre</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-6673711-3867567</IRI>
+        <Literal xml:lang="fr">�tat d&apos;un pr�sentateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-6770385-5826203</IRI>
+        <Literal xml:lang="fr">Date limite de soumission</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-6800278-1641341</IRI>
+        <Literal xml:lang="fr">Ordinateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-6825335-9542878</IRI>
+        <Literal xml:lang="fr">Mod�lisation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-6863829-2743221</IRI>
+        <Literal xml:lang="fr">Frais d&apos;inscription d&apos;auteur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-6909300-6394915</IRI>
+        <Literal xml:lang="fr">Item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-7041425-7788285</IRI>
+        <Literal xml:lang="fr">Formulaire de r�servation de chambre d&apos;h�tel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-7228313-0020468</IRI>
+        <Literal xml:lang="fr">Chambre d&apos;h�tel double</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-7233445-8264658</IRI>
+        <Literal xml:lang="fr">Activit�</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-7262127-1739733</IRI>
+        <Literal xml:lang="fr">Manuscrit final</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-7446694-8638795</IRI>
+        <Literal xml:lang="fr">Date limite</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-7475109-7627187</IRI>
+        <Literal xml:lang="fr">�tat</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-7545265-1758012</IRI>
+        <Literal xml:lang="fr">Pr�sentateur salari�</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-7656366-4247560</IRI>
+        <Literal xml:lang="fr">Activit� ayant lieu avant une conf�rence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-7724806-2837359</IRI>
+        <Literal xml:lang="fr">Fuseau horaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-7755720-4737926</IRI>
+        <Literal xml:lang="fr">R�troprojecteur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-7848255-8121844</IRI>
+        <Literal xml:lang="fr">Virement bancaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-7902640-7303520</IRI>
+        <Literal xml:lang="fr">Bureau principal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-7909005-9095109</IRI>
+        <Literal xml:lang="fr">B�timent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-7909417-3628726</IRI>
+        <Literal xml:lang="fr">Projecteur LCD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-7940552-6240385</IRI>
+        <Literal xml:lang="fr">Pr�sentation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-8070797-2832388</IRI>
+        <Literal xml:lang="fr">Navette</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-8165583-3265102</IRI>
+        <Literal xml:lang="fr">Br�ve introduction de pr�sident de session</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-8354376-0772641</IRI>
+        <Literal xml:lang="fr">Formulaire</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-8391085-7090023</IRI>
+        <Literal xml:lang="fr">Actes en support num�rique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-8409291-0556065</IRI>
+        <Literal xml:lang="fr">Ville de pr�sentateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-8549275-2053115</IRI>
+        <Literal xml:lang="fr">Personne</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-8593720-5685756</IRI>
+        <Literal xml:lang="fr">Universit� de pr�sentateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-8679616-2487440</IRI>
+        <Literal xml:lang="fr">R�ception de manuscrit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-8689257-0549094</IRI>
+        <Literal xml:lang="fr">D�part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-8753832-9718220</IRI>
+        <Literal xml:lang="fr">Sponsor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-8835333-6455364</IRI>
+        <Literal xml:lang="fr">Pr�sident de session</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-9022031-1800687</IRI>
+        <Literal xml:lang="fr">Conf�rence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-9245772-9961311</IRI>
+        <Literal xml:lang="fr">Frais d&apos;inscription</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-9340416-5747801</IRI>
+        <Literal xml:lang="fr">Document de paiement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-9393214-0184120</IRI>
+        <Literal xml:lang="fr">Maison de pr�sentateur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-9452078-7040519</IRI>
+        <Literal xml:lang="fr">Pr�sentation d&apos;accueil</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-9462784-2729114</IRI>
+        <Literal xml:lang="fr">A�roport de conf�rence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-9491444-7772192</IRI>
+        <Literal xml:lang="fr">Soumission</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-9518215-0989021</IRI>
+        <Literal xml:lang="fr">Comit� technique</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-9585109-2159078</IRI>
+        <Literal xml:lang="fr">Ville de conf�rence</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-9670012-9591617</IRI>
+        <Literal xml:lang="fr">Tutoriel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-9713438-5431590</IRI>
+        <Literal xml:lang="fr">Voiture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-9847623-8412643</IRI>
+        <Literal xml:lang="fr">Frais d&apos;inscription d&apos;auteur participant pour les actes au format papier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#c-9885865-2240529</IRI>
+        <Literal xml:lang="fr">Maison de soci�t� de sponsor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ent-6425375-5640253</IRI>
+        <Literal xml:lang="fr">est dat� du</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ent-7995576-1167082</IRI>
+        <Literal xml:lang="fr">a quantit� de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ent-9641747-5633047</IRI>
+        <Literal xml:lang="fr">est fait jusqu&apos;�</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-0030754-5558313</IRI>
+        <Literal xml:lang="fr">est pay� �</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-0206543-7504445</IRI>
+        <Literal xml:lang="fr">est utilis� pour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-0313040-1001176</IRI>
+        <Literal xml:lang="fr">est donn� �</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-0522612-7325569</IRI>
+        <Literal xml:lang="fr">est envoy� apr�s</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-1410040-6771887</IRI>
+        <Literal xml:lang="fr">est �quip� par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-1499245-4600419</IRI>
+        <Literal xml:lang="fr">pr�pare</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-1536763-8431821</IRI>
+        <Literal xml:lang="fr">est sign� par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-1628206-0594563</IRI>
+        <Literal xml:lang="fr">est envoy� par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-1864476-9268210</IRI>
+        <Literal xml:lang="fr">occupe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-2142377-5662357</IRI>
+        <Literal xml:lang="fr">est n�cessaire pour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-2324004-3315334</IRI>
+        <Literal xml:lang="fr">est �crit par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-2380138-2494494</IRI>
+        <Literal xml:lang="fr">a lieu apr�s</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-2627938-7096672</IRI>
+        <Literal xml:lang="fr">est pay� pour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-2772714-6978421</IRI>
+        <Literal xml:lang="fr">paie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-2949151-3420526</IRI>
+        <Literal xml:lang="fr">est utilis� par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-3224977-6802601</IRI>
+        <Literal xml:lang="fr">est visit� par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-3242475-9405929</IRI>
+        <Literal xml:lang="fr">est fait � partir de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-3562986-8241380</IRI>
+        <Literal xml:lang="fr">est pr�sent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-3795418-4868612</IRI>
+        <Literal xml:lang="fr">est envoy� avant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-4160673-7268306</IRI>
+        <Literal xml:lang="fr">signe</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-4689538-1355186</IRI>
+        <Literal xml:lang="fr">parle �</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-5069456-1141693</IRI>
+        <Literal xml:lang="fr">est con�u pour</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-5073161-7917559</IRI>
+        <Literal xml:lang="fr">est connect� �</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-5830377-4355172</IRI>
+        <Literal xml:lang="fr">est occup� par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-5936609-7956818</IRI>
+        <Literal xml:lang="fr">est situ� dans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-6196483-3379968</IRI>
+        <Literal xml:lang="fr">�crit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-6229890-1258016</IRI>
+        <Literal xml:lang="fr">est pr�par� par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-6455536-6002248</IRI>
+        <Literal xml:lang="fr">a besoin de</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-6634130-3048554</IRI>
+        <Literal xml:lang="fr">est pay� avec</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-6908948-8663913</IRI>
+        <Literal xml:lang="fr">donne</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-6979937-7916442</IRI>
+        <Literal xml:lang="fr">est pr�sent �</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-7070909-3537965</IRI>
+        <Literal xml:lang="fr">est pay� par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-8197531-4217948</IRI>
+        <Literal xml:lang="fr">a lieu avant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-8377117-4664902</IRI>
+        <Literal xml:lang="fr">passe par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-8502713-4498335</IRI>
+        <Literal xml:lang="fr">envoie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-9476732-5075803</IRI>
+        <Literal xml:lang="fr">a lieu dans</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-9593649-0507589</IRI>
+        <Literal xml:lang="fr">est donn� par</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#op-9760493-4479889</IRI>
+        <Literal xml:lang="fr">obtient</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.4.2018-07-26T06:48:53Z) https://github.com/owlcs/owlapi -->
+
