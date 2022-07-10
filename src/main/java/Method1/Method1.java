@@ -478,16 +478,11 @@ public class Method1 {
 
     public static void main (String [ ] args) throws IOException, OWLOntologyCreationException, OWLOntologyStorageException, ScriptException, InterruptedException {
 
-        //Parametros:
-        //     ontology_file    final_lenguage_template       boolInferencia       boolTraducir
-        // si boolInferencia = 0 no inferimos si es 1 inferimos
-        // si boolTraducir = 0 no traducimos si es 1 traducimos los nombres
-
         if (args.length != 4){
             System.out.println("\n\nNumero de parametros incorrecto, usage:\n         ./program  ontology_file  final_lenguage_template  boolInferencia  boolTraducir\n");
             System.exit(1);
         }
-        // inferimos mediante un reasoner, que es el mismo de protege(en teoria)
+        // inferimos mediante un reasoner
         if( args[2].equals("1")){
             OntDocumentManager mgr = new OntDocumentManager();
             mgr.setProcessImports(true);

@@ -84,7 +84,7 @@ public class Elemento {
 
     protected String completarFrase( String template, String[] text){
 
-        //if ( template == null) return "";
+        if ( template == null) return "";
 
         String frase = template;
         frase = frase.replace("[?name]", "[" +  elementoName + "]");
